@@ -5,7 +5,7 @@ body{
 
 #landing{
     height: 100vh;
-    background-image: url("../images/window-with-specks.jpg");
+    background-image: url("../images/underwater.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body{
     margin-top: 50px;
 }
 
-#work {
+#projects {
     background-color: rgb(61,61,61);
 }
 

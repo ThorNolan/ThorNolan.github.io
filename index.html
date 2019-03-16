@@ -8,13 +8,33 @@
     <meta name="description" content="Thor Nolan - Full-stack Web Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- link to css reset -->
     <link rel="stylesheet" href="assets/css/reset.css">
 
-    <!-- Compiled and minified CSS -->
+    <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <!-- link to font-awesome for icons -->
+    <!-- link to font-awesome and materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Link my stylesheet -->
@@ -23,7 +43,7 @@
 
 <body>
 
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <div class="navbar-fixed">     
         <nav class="black">
             <div class="container">
@@ -32,7 +52,7 @@
                     <ul class="right hide-on-med-and-down" id="navList">
                         <li><a href="#landing">Home</a></li>
                         <li><a href="#intro">About Me</a></li>
-                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -41,38 +61,34 @@
     </div>
         
     <!-- LANDING AREA WITH HEADSHOT/NAME -->
-    <div class="section" id="landing">
-
+    <div class="section scrollspy" id="landing">
         <div class="container center">
+
             <img id="mainPicture" class="center circle responsive-img" src="assets/images/headshot (small & square).jpg">
-            <h1 style="color: white;"  class="center">
+
+            <h1 style="color: white;" class="center">
                 THOR <b>NOLAN</b>
             </h1>
 
             <h6 id="mainText" class="center">Full-Stack Developer</h6>
-        </div> 
 
+        </div> 
     </div>
         
     <!-- ABOUT ME SECTION -->
-        
-    <div id="intro" class="section black">
+    <div id="intro" class="section black scrollspy">
         <div class="container">
-            <div class="row">
-                <div  class="col s12">
-                    <h2 class="center header"></h2>
-                </div>
-            </div>
-
             <div class="row center">
-                <dic class="col s12 m12">
+                <div class="col s12 m12">
+
                     <h5 class="center"><b>ABOUT ME</b></h5>
-                    <p>My name is Thor Nolan, and I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with code any way that I can.</p> 
+                    <p>I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with code any way that I can.</p> 
                     <br>
-                    <p>My areas of interest include technology, philosophy, politics, writing, and gaming, but that's to name only a few. By the time I finish my bootcamp, I will have significant hands-on experience working with HTML, CSS and CSS frameworks, vanilla Javascript, jQuery, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
+                    <p>My areas of interest include technology, philosophy, politics, social justice, writing, and gaming, but that's to name only a few. By the time I finish my bootcamp, I will have significant hands-on experience working with HTML, CSS and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
                     <br>
                     <p>When I'm not working on honing my coding skills, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC for gaming as well as adding to my unreasonably large (and still-growing) library of games.</p>
-                </dic>
+
+                </div>
             </div>
         </div>
     </div>
@@ -80,7 +96,7 @@
     <!--SECOND PARALLAX SECTION-->
     <div id="p1" class="parallax-container">
         <div  class="parallax">
-            <img src="https://user-images.githubusercontent.com/26179770/37276909-311e65d2-2609-11e8-9fb9-fa2a6838b02f.png">
+            <img src="assets/images/window-with-specks.jpg">
                         
         </div>
         
@@ -96,7 +112,7 @@
     </div>
         
     <!--PORTFOLIO PROJECTS SECTION-->
-    <div class="section" style="background-color: #141414;" id="work">
+    <div class="section scrollspy" style="background-color: #141414;" id="projects">
         <div class="container">
             <h3 class="header text_b center">My Projects </h3>
             
@@ -163,7 +179,7 @@
     </div>
             
     <!-- CONTACT FORM SECTION -->
-    <div class="section" style="background-color: #101010;" id="skillsets">
+    <div class="section scrollspy" style="background-color: #101010;" id="contact">
         <div class="container">
             <div class="row">
                 <h1 class="center white-text">
@@ -199,7 +215,7 @@
             <i class="fa fa-globe"></i>
         </a>
         <ul>
-            <li><a target="_blank" href="" class="btn-floating fab-img"></a></a></li>
+            <li><a target="_blank" href="" class="btn-floating"><i class="fab-img"><img src="assets/images/gmail-icon.png"></i></a></li>
             <li><a target="_blank" href="https://github.com/ThorNolan" class="btn-floating grey darken-3"><i class="fa fa-github"></i></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/thor-nolan-0704b9179/" class="btn-floating blue lighten-1"><i class="fa fa-linkedin"></i></a></li>
         </ul>
