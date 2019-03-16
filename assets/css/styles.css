@@ -26,6 +26,10 @@ body{
     background-color: rgb(61,61,61);
 }
 
+.fab-img {
+    background-image: url(../images/gmail-icon.png);
+}
+
 #p1 {
     height: 350px;
 }
