@@ -33,3 +33,36 @@ body{
 #p1 {
     height: 350px;
 }
+
+.aboutMe p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+/* label focus color for form */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #1565c0 !important;
+   }
+
+.input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #1565c0 !important;
+}
+
+/* label underline focus color for form */
+.input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #1565c0 !important;
+    box-shadow: 0 1px 0 0 #1565c0 !important;
+}
+
+.input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #1565c0 !important;
+    box-shadow: 0 1px 0 0 #1565c0 !important;
+}
+
+.material-icons{
+    color: #ffffff !important;
+}
+  
+.material-icons.active {
+    color: #1565c0 !important;
+}

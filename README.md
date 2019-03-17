@@ -10,7 +10,6 @@ A portfolio page I made that demonstrates some of my skills as a web developer a
 + I utilized the *Materialize.css* framework for built-in components, stylings and added responsiveness. I opted for the CDN rather than downloading the minified css into my root directory. 
   
 + This page uses the *jQuery* library as it is utilized by some of the built-in Materialize features. 
-  
 
 + Gmail icon source: <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
    
