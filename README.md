@@ -2,7 +2,7 @@ My Portfolio Page
 ===================================================
 A portfolio page I made that demonstrates some of my skills as a web developer and provides a centralized location for looking at my projects and linking to my various social media accounts. It also includes a form for easy way to get in touch with me via email.
 
-![demo image]()
+![demo image](assets/images/demo-image-for-readme.png)
 
 ## Technologies Used
 + Page elements and styling were done with *HTML5* and *CSS3*, with a bit of *Javascript* for initialization as well.
