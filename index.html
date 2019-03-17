@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Thor Nolan | My Portfolio</title>
+    <title>Thor Nolan | Portfolio</title>
     
     <meta charset="UTF-8">
-    <meta name="keywords" content="web design, web, development, web development, website, thor, nolan, thor nolan, thornolan, california, full-stack, front-end, back-end, coding, coder, programmer">
+    <meta name="keywords" content="web design, web, development, web development, website, thor, nolan, thor nolan, thornolan, california, full-stack, front-end, back-end, coding, coder, programmer, html, css, javascript">
     <meta name="description" content="Thor Nolan - Full-stack Web Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -70,7 +70,7 @@
                 THOR <b>NOLAN</b>
             </h1>
 
-            <h6 id="mainText" class="center">Full-Stack Developer</h6>
+            <h6 id="mainText" class="center">Aspiring Full-Stack Developer</h6>
 
         </div> 
     </div>
@@ -82,9 +82,11 @@
                 <div class="col s12 m12">
 
                     <h5 class="center"><b>ABOUT ME</b></h5>
-                    <p>I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with code any way that I can.</p> 
+                    <p>I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with and writing code.</p> 
                     <br>
-                    <p>My areas of interest include technology, philosophy, politics, social justice, writing, and gaming, but that's to name only a few. By the time I finish my bootcamp, I will have significant hands-on experience working with HTML, CSS and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
+                    <p>My areas of interest include technology, philosophy, politics, writing, and gaming, to name a few. These interests have informed my motivation to learn how to code and continue to drive me towards new ways of both conceptualizing the problems that I encounter and acquiring new hard skills to better tackle them.</p>
+                    <br> 
+                    <p>By the time I finish my bootcamp, I will have significant hands-on experience working with HTML5, CSS3 and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, Node.js, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
                     <br>
                     <p>When I'm not working on honing my coding skills, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC for gaming as well as adding to my unreasonably large (and still-growing) library of games.</p>
 
@@ -95,9 +97,9 @@
         
     <!--SECOND PARALLAX SECTION-->
     <div id="p1" class="parallax-container">
+
         <div  class="parallax">
-            <img src="assets/images/window-with-specks.jpg">
-                        
+            <img src="assets/images/big-sur.jpg">              
         </div>
         
         <div class="container">
@@ -181,6 +183,7 @@
     <!-- CONTACT FORM SECTION -->
     <div class="section scrollspy" style="background-color: #101010;" id="contact">
         <div class="container">
+            
             <div class="row">
                 <h1 class="center white-text">
                     Contact
@@ -188,23 +191,36 @@
             </div>
             
             <div class="row center">
+                <form class="col s12"id="contactForm">
 
-                <div class="col s12 m12 l3">
-                    <img class="responsive-img" src="">
-                </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Name</label>
+                            </div>
+                        </div>
 
-                <div class="col s12 m12 l3">
-                    <img class="responsive-img" src="">
-                </div>
-                
-                <div class="col s12 m12 l3">
-                    <img class="responsive-img" src="">
-                </div>
-                
-                <div class="col s12 m12 l3">
-                    <img class="responsive-img" src="">
-                </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mail</i>
+                                <input id="email" type="email" class="validate" placeholder="email@gmail.com">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+ 
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                                <label for="textarea2">Message</label>
+                            </div>
+                        </div>
 
+                    <button class="btn red waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
@@ -215,7 +231,7 @@
             <i class="fa fa-globe"></i>
         </a>
         <ul>
-            <li><a target="_blank" href="" class="btn-floating"><i class="fab-img"><img src="assets/images/gmail-icon.png"></i></a></li>
+            <li><a target="_blank" href="#contact" class="btn-floating red"><i class="material-icons">mail</i></a></li>
             <li><a target="_blank" href="https://github.com/ThorNolan" class="btn-floating grey darken-3"><i class="fa fa-github"></i></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/thor-nolan-0704b9179/" class="btn-floating blue lighten-1"><i class="fa fa-linkedin"></i></a></li>
         </ul>
