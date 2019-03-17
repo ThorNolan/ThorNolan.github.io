@@ -40,16 +40,11 @@ body{
     height: 350px;
 }
 
-.aboutMe p {
-    font-size: 1.5vw;
-    line-height: 1.5;
-}
-
 .aboutMe {
     margin-bottom: 5vw;
 }
 
-/* label focus color for form */
+/* label focus color for contact form */
 .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
     color: #1565c0 !important;
    }
@@ -78,18 +73,14 @@ body{
 }
 
 
-/* Responsiveness for changes in screen size */
+/* Responsiveness for changes in screen size with media queries */
 
 @media only screen and (max-width:768px) {
  
 }
 
 @media only screen and (max-width:640px) {
-    .aboutMe p {
-        font-size: 1.7vw;
-        line-height: 1.5;
-    }
-
+    
     #logo-image {
         width: 27vw;
     }
@@ -103,5 +94,12 @@ body{
         background-repeat: no-repeat;
         background-attachment: fixed;
         z-index: -1;
+    }
+}
+
+@media only screen and (max-width:380px) {
+
+    #logo-image {
+        width: 40vw;
     }
 }

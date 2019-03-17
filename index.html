@@ -63,19 +63,19 @@
     </div>
         
     <!-- ABOUT ME SECTION -->
-    <div id="intro" class="section black scrollspy">
+    <div class="section black">
         <div class="container">
             <div class="row center">
                 <div class="col s12 m12 aboutMe">
 
-                    <h5 class="center"><b>ABOUT ME</b></h5>
-                    <p class="flow-text">I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with and writing code.</p> 
+                    <h4 class="center"><b>ABOUT ME</b></h4>
+                    <p class="flow-text scrollspy" id="intro">I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with and writing code.</p> 
                     <br>
                     <p class="flow-text">My areas of interest include technology, philosophy, politics, writing, and gaming, to name a few. These interests have informed my motivation to learn how to code and continue to drive me towards new ways of both conceptualizing the problems that I encounter and acquiring new hard skills to better tackle them.</p>
                     <br> 
                     <p class="flow-text">By the time I finish my bootcamp, I will have significant hands-on experience working with HTML5, CSS3 and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, Node.js, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
                     <br>
-                    <p class="flow-text">When I'm not working on honing my coding skills, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC for gaming as well as adding to my unreasonably large library of games.</p>
+                    <p class="flow-text">When I'm not working on honing my coding skills, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC for gaming and adding to my unreasonably large library of games.</p>
 
                 </div>
             </div>
@@ -91,15 +91,16 @@
                         
     </div>
         
-    <!--PORTFOLIO PROJECTS SECTION-->
-    <div class="section scrollspy" style="background-color: #141414;" id="projects">
+    <!--PORTFOLIO PROJECTS SECTION WITH CARDS-->
+    <div class="section" style="background-color: #141414;">
         <div class="container">
-            <h3 class="header text_b center">Some of My Projects:</h3>
+            <h4 class="header text_b center">SOME OF MY PROJECTS:</h4>
             
             <div class="row">
                 <div class="col s12 m12 l4">
-
                     <div class="card black hoverable">
+                        <div class="scrollspy" id="projects"></div>
+
                         <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="assets/images/giphy-demo-image.PNG">
                     </div>
@@ -179,13 +180,11 @@
     </div>
             
     <!-- CONTACT FORM SECTION -->
-    <div class="section scrollspy" style="background-color: #101010;" id="contact">
+    <div class="section" style="background-color: #101010;">
         <div class="container">
 
-            <div class="row">
-                <h1 class="center white-text">
-                    Get in Touch
-                </h1>
+            <div class="row scrollspy" id="contact">
+                <h4 class="center white-text"><b>GET IN TOUCH</b></h4>
             </div>
             
             <div class="row center">
@@ -223,9 +222,9 @@
         </div>
     </div>
         
-    <!-- FIXED ACTION BUTTON -->
+    <!-- FIXED ACTION BUTTON FOR SOCIAL MEDIA-->
     <div class="fixed-action-btn vertical">
-        <a class="btn-floating btn-large blue-grey darken-4 pulse">
+        <a class="btn-floating btn-large blue darken-3 pulse">
             <i class="fa fa-globe"></i>
         </a>
         <ul>
