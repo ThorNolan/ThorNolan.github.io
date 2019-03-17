@@ -9,23 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon links -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="assets/images/site.webmanifest">
 
     <!-- link to css reset -->
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -43,12 +30,12 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR WITH HREF'S FOR SCROLLSPY-->
     <div class="navbar-fixed">     
         <nav class="black">
             <div class="container">
-                <div="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="assets/images/thor-nolan-logo.png"></a>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><img id="logo-image" src="assets/images/thor-nolan-logo.png"></a>
                     <ul class="right hide-on-med-and-down" id="navList">
                         <li><a href="#landing">Home</a></li>
                         <li><a href="#intro">About Me</a></li>
@@ -82,13 +69,13 @@
                 <div class="col s12 m12 aboutMe">
 
                     <h5 class="center"><b>ABOUT ME</b></h5>
-                    <p>I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with and writing code.</p> 
+                    <p class="flow-text">I am an aspiring web developer living in the Bay Area. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I'm always looking for new ways to expand my coding skill set and gain experience working with and writing code.</p> 
                     <br>
-                    <p>My areas of interest include technology, philosophy, politics, writing, and gaming, to name a few. These interests have informed my motivation to learn how to code and continue to drive me towards new ways of both conceptualizing the problems that I encounter and acquiring new hard skills to better tackle them.</p>
+                    <p class="flow-text">My areas of interest include technology, philosophy, politics, writing, and gaming, to name a few. These interests have informed my motivation to learn how to code and continue to drive me towards new ways of both conceptualizing the problems that I encounter and acquiring new hard skills to better tackle them.</p>
                     <br> 
-                    <p>By the time I finish my bootcamp, I will have significant hands-on experience working with HTML5, CSS3 and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, Node.js, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
+                    <p class="flow-text">By the time I finish my bootcamp, I will have significant hands-on experience working with HTML5, CSS3 and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, Node.js, and React, Git, Github, and Heroku, Django, MySQL and MongoDB, as well as Express and the MERN Stack.</p>
                     <br>
-                    <p>When I'm not working on honing my coding skills, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC for gaming as well as adding to my unreasonably large (and still-growing) library of games.</p>
+                    <p class="flow-text">When I'm not working on honing my coding skills, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC for gaming as well as adding to my unreasonably large (and still-growing) library of games.</p>
 
                 </div>
             </div>
@@ -186,7 +173,7 @@
 
             <div class="row">
                 <h1 class="center white-text">
-                    Contact
+                    Get in Touch
                 </h1>
             </div>
             
@@ -217,7 +204,7 @@
                             </div>
                         </div>
 
-                    <button class="btn red waves-effect waves-light" type="submit" name="action">Submit
+                    <button class="btn blue darken-3 waves-effect waves-light" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                     </button>
                 </form>
@@ -227,7 +214,7 @@
         
     <!-- FIXED ACTION BUTTON -->
     <div class="fixed-action-btn vertical">
-        <a class="btn-floating btn-large blue-grey darken-4">
+        <a class="btn-floating btn-large blue-grey darken-4 pulse">
             <i class="fa fa-globe"></i>
         </a>
         <ul>
