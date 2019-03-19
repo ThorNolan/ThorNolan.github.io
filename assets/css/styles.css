@@ -31,6 +31,15 @@ body{
     margin-top: 50px;
 }
 
+/* changes hover effect on navbar list items */
+.navbar-fixed .nav-wrapper > ul > li > a:hover {
+    color: white;
+}
+
+.navbar-fixed .nav-wrapper > ul > li:hover {
+    background-color: #1565c0;
+}
+
 /* projects section styling */
 #projects {
     background-color: rgb(61,61,61);
