@@ -15,9 +15,9 @@ A portfolio page I made that demonstrates some of my skills as a web developer a
 
 ## Plans for the Future
 
-+ As I continue to complete more projects they will be added to my projects section
++ As I continue to complete more projects they will be added to my projects section!
 
-+ Refine my about me section to include a better breakdown of my skill-sets with more details. 
++ Refine my about me section to include a better breakdown of my skill-sets with more details (delineated into front-end skills, back-end skills, other skills, etc.). 
 
 + Some CSS animations for a couple sections to make it just a little flashier. 
    
