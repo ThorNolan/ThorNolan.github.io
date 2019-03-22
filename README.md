@@ -1,6 +1,6 @@
-My Portfolio Page
+My Portfolio
 ===================================================
-A portfolio page I made that demonstrates some of my skills as a web developer and provides a centralized location for looking at my projects and linking to my various social media accounts. It also includes a form for easy way to get in touch with me via email.
+A portfolio page I made that demonstrates some of my skills as a web developer and provides a centralized location for looking at my projects and their associated deployed and Github repository links, as well as links to my LinkedIn, Github and my email for getting in touch with me.
 
 ![demo image](/assets/images/demo-image-for-readme.PNG "Demo image")
 
@@ -11,7 +11,7 @@ A portfolio page I made that demonstrates some of my skills as a web developer a
   
 + This page uses the **jQuery** library as it is utilized by some of the built-in Materialize features. 
 
-+ Icons are from Font-awesome and Google Material Icons.
++ Icons are from **Font-awesome** and **Google Material Icons**.
 
 ## Plans for the Future
 
@@ -21,6 +21,8 @@ A portfolio page I made that demonstrates some of my skills as a web developer a
 
 + Some CSS animations for a couple sections to make it just a little flashier. 
    
++ Option to choose between a light/dark theme for the page.
+
   
 [Click here to visit my page!](https://thornolan.github.io/ "deployed site")
 
