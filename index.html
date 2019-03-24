@@ -35,7 +35,7 @@
  
     <!-- NAVBAR WITH HREF'S FOR SCROLLSPY-->
     <div class="navbar-fixed">     
-        <nav class="black">
+        <nav class="black topNav">
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo"><img id="logo-image" src="assets/images/thor-nolan-logo.png"></a>
@@ -66,8 +66,8 @@
 
             <img id="mainPicture" class="center circle responsive-img" src="assets/images/headshot (small & square).jpg">
 
-            <h1 style="color: white;" class="center">
-                THOR <b>NOLAN</b>
+            <h1 style="color: white;" class="center fullName">
+                <span id="firstName">THOR</span><div id="divider"></div><span><b id="lastName">NOLAN</b></span>
             </h1>
 
             <!-- typewriter effect will be applied here -->
@@ -81,7 +81,7 @@
     </div>
         
     <!-- ABOUT ME SECTION -->
-    <div class="section black">
+    <div class="section" style="background-color: #141414;">
         <div class="container">
             <div class="row center">
                 <div class="col s12 m12 aboutMe">
@@ -116,78 +116,80 @@
             <h6 class="header center italicizeMe">Click any of the titles to see a short description of the project and a link to its Github repository</h6>
             <br>
 
-            <!-- AJAX gif finder -->
+            
             <div class="row">
+                <!-- AJAX gif finder -->
                 <div class="col s12 m12 l4">
-                    <div class="card black hoverable">
+                    <div class="card small black hoverable">
 
                         <div class="card-image waves-effect waves-block waves-light">
                             <div class="scrollspy" id="projects"></div>
                             <img class="activator" src="assets/images/gif-me-some-space-demo.gif">
                         </div>
                         
-                    <div class="card-content">
-                        <span class="card-title activator purple-text text-lighten-5">GIF Me Some Space<i class="mdi-navigation-more-vert right"></i></span>
-                        <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/AJAX-Gif-Finder/" target="_blank">[TRY ME]</a></p>
-                    </div>
+                        <div class="card-content">
+                            <span class="card-title activator purple-text text-lighten-5">GIF Me Some Space<i class="mdi-navigation-more-vert right"></i></span>
+                            <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/AJAX-Gif-Finder/" target="_blank">[TRY ME]</a></p>
+                        </div>
                     
-                    <div class="card-reveal  black">
-                        <span class="card-title purple-text text-lighten-5">Gif Me Some Space<i class="mdi-navigation-close right"></i></span>
-                        <p>A simple site I made that populates the page with relevant gifs based on keyword searches from user input and button presses using the GIPHY API. The theme is space, so the first buttons that appear on the navbar are all space themed, but users are free to add any additional themes they would like using the form on the page.</p>
-                        <br>
-                        <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/AJAX-Gif-Finder" target="_blank"><u>Github Repo Link</u></a></p>
+                        <div class="card-reveal black">
+                            <span class="card-title purple-text text-lighten-5">Gif Me Some Space<i class="mdi-navigation-close right"></i></span>
+                            <p>A simple site I made that populates the page with relevant gifs based on keyword searches from user input and button presses using the GIPHY API. The theme is space, so the first buttons that appear on the navbar are all space themed, but users are free to add any additional themes they would like using the form on the page.</p>
+                            <br>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/AJAX-Gif-Finder" target="_blank"><u>Github Repo Link</u></a></p>
+                        </div>
                     </div>
-                </div>
-            </div>  
+                </div>  
         
-            <!-- Kender app -->
-            <div class="col s12 m12 l4">
-                <div class="card black hoverable">
-
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/images/kender-landing-page-demo.PNG">
-                    </div>
-                    
-                    <div class="card-content">
-                        <span class="card-title activator purple-text text-lighten-5">Kender<i class="mdi-navigation-more-vert right"></i></span>
-                        <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/Project-1/" target="_blank">[TRY ME]</a></p>
-                    </div>
-                    
-                    <div class="card-reveal black">
-                        <span class="card-title purple-text text-lighten-5">Kender<i class="mdi-navigation-close right"></i></span>
-                        <p>An app that allows users to input some of their interests as well as their location, and it will make calls to multiple API's to update the page with some relevant music playlists, upcoming events near their location, and a 3 day weather forecast.</p>
-                        <br>
-                        <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/Project-1" target="_blank"><u>Github Repo Link</u></a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Overwatch trivia game -->
-            <div class="col s12 m12 l4">
-                <div class="card black hoverable">
-
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/images/overwatch-trivia-demo.gif">
-                    </div>
-                    
-                    <div class="card-content">
-                        <span class="card-title activator purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-more-vert right"></i></span>
-                        <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/TriviaGame/" target="_blank">[TRY ME]</a></p>
-                    </div>
-
-                    <div class="card-reveal  black">
-                        <span class="card-title purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-close right"></i></span>
-                        <p>A timed trivia game I made for my full-stack coding bootcamp. Page elements are dynamically updated by using the jQuery library and JavaScript timeout functionalitiess. The theme and questions are based on the game Overwatch!</p>
-                        <br>
-                        <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/TriviaGame" target="_blank"><u>Github Repo Link</u></a></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Grandpa's Pills game -->
-            <div class="row">
+                <!-- Kender app -->
                 <div class="col s12 m12 l4">
-                    <div class="card black hoverable">
+                    <div class="card small black hoverable">
+
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/kender-demo-gif.gif">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="card-title activator purple-text text-lighten-5">Kender<i class="mdi-navigation-more-vert right"></i></span>
+                            <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/Project-1/" target="_blank">[TRY ME]</a></p>
+                        </div>
+                        
+                        <div class="card-reveal black">
+                            <span class="card-title purple-text text-lighten-5">Kender<i class="mdi-navigation-close right"></i></span>
+                            <p>An app that allows users to input some of their interests as well as their location, and it will make calls to multiple API's to update the page with some relevant music playlists, upcoming events near their location, and a 3 day weather forecast.</p>
+                            <br>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/Project-1" target="_blank"><u>Github Repo Link</u></a></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Overwatch trivia game -->
+                <div class="col s12 m12 l4">
+                    <div class="card small black hoverable">
+
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/overwatch-trivia-demo.gif">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="card-title activator purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-more-vert right"></i></span>
+                            <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/TriviaGame/" target="_blank">[TRY ME]</a></p>
+                        </div>
+
+                        <div class="card-reveal black">
+                            <span class="card-title purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-close right"></i></span>
+                            <p>A timed trivia game I made for my full-stack coding bootcamp. Page elements are dynamically updated by using the jQuery library and JavaScript timeout functionalitiess. The theme and questions are based on the game Overwatch!</p>
+                            <br>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/TriviaGame" target="_blank"><u>Github Repo Link</u></a></p>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row">
+            
+                <!-- Grandpa's Pills game -->
+                <div class="col s12 m12 l4">
+                    <div class="card small black hoverable">
 
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="assets/images/Grandpas-pills-demo.gif">
@@ -205,12 +207,11 @@
                             <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/unit-4-game" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
                     </div>
-            </div> 
+                </div>    
 
-            <!-- LIRI Bot -->
-            <div class="row">
+                <!-- LIRI Bot -->
                 <div class="col s12 m12 l4">
-                    <div class="card black hoverable">
+                    <div class="card small black hoverable">
 
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="assets/images/LIRI-Bot-demo.gif">
@@ -218,7 +219,7 @@
                             
                         <div class="card-content">
                             <span class="card-title activator purple-text text-lighten-5">LIRI Bot<i class="mdi-navigation-more-vert right"></i></span>
-                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/liri-node-app" target="_blank">[CLI app, so just the repo!]</a></p>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/liri-node-app" target="_blank">[CLI app, repo only]</a></p>
                         </div>
                         
                         <div class="card-reveal  black">
@@ -227,12 +228,12 @@
                             <br>
                             <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/liri-node-app" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
-                    </div>
-            </div> 
-                            
+                    </div> 
+                </div>           
+            </div> <!-- row end -->
+
         </div>
-    </div>
-    </div>
+    </div> 
             
     <!-- CONTACT FORM SECTION -->
     <div class="section" style="background-color: #101010;">

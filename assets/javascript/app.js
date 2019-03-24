@@ -13,5 +13,17 @@ $(document).ready(function(){
     $( window ).resize(function() {
         if($(window).width() <= 640) $(".actionButton").addClass("click-to-toggle");
     });
+
+    // navbar opacity feature
+    // $(window).scroll( function() {
+    //     // apply css classes based on scroll positioning
+    //     if ($(".topNav").offset().top > 100) {
+    //       $(".topNav").addClass("navbar-scrolled");
+    //     } else {
+    //       $(".topNav").removeClass("navbar-scrolled");
+    //     }
+    // });
 });
+
+
      
