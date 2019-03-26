@@ -254,7 +254,7 @@
             <div class="row scrollspy" id="contact">
                 <h4 class="center white-text"><b>GET IN TOUCH</b></h4>
             </div>
-            
+
             <div class="row center">
                 <form class="col s12"id="contactForm">
 
@@ -296,9 +296,18 @@
             <i class="fa fa-globe"></i>
         </a>
         <ul>
-            <li><a target="_blank" href="#contact" class="btn-floating red waves-effect waves-light"><i class="material-icons">mail</i></a></li>
-            <li><a target="_blank" href="https://github.com/ThorNolan" class="btn-floating grey darken-3 waves-effect waves-light"><i class="fa fa-github"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/thor-nolan-0704b9179/" class="btn-floating blue lighten-1 waves-effect waves-light"><i class="fa fa-linkedin"></i></a></li>
+            <!-- email with tooltip and click to copy to clipboard functionality -->
+            <li>
+                <a id="email" data-clipboard-text="tnolan5764@gmail.com" class="btn-floating red waves-effect waves-light tooltipped" data-position="left" data-tooltip="Click to copy my email to your clipboard!"><i class="material-icons">mail</i></a>
+            </li>
+            <!-- github link -->
+            <li>
+                <a target="_blank" href="https://github.com/ThorNolan" class="btn-floating grey darken-3 waves-effect waves-light"><i class="fa fa-github"></i></a>
+            </li>
+            <!-- link to my linkedin -->
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/thor-nolan-0704b9179/" class="btn-floating blue lighten-1 waves-effect waves-light"><i class="fa fa-linkedin"></i></a>
+            </li>
         </ul>
     </div>
         
@@ -308,6 +317,9 @@
             Thor Nolan &#169;2019
         </div>
     </footer>
+
+<!-- link to clipboard.js library     -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
 <!-- link to the jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
