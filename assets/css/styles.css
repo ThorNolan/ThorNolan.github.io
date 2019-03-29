@@ -133,7 +133,7 @@ to   { opacity: 1; }
     width: auto;
     display: inline-flex;
     overflow: hidden; 
-    border-right: .15em solid #1565c0; 
+    border-right: .15em solid #1191CC; 
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .15em; 
@@ -151,16 +151,20 @@ to   { opacity: 1; }
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #1565c0; }
+    50% { border-color: #1191CC; }
   }
 
 /* changes hover effect on navbar list items */
 .navbar-fixed .nav-wrapper > ul > li > a:hover {
-    color: white;
+    color: #1191CC;
 }
 
 .navbar-fixed .nav-wrapper > ul > li:hover {
-    background-color: #1565c0;
+    color: #1191CC;
+}
+
+.navbar-fixed .nav-wrapper > ul > li > a > i:hover {
+    color: #1191CC;
 }
 
 /* projects section styling */
@@ -191,30 +195,34 @@ video::-webkit-media-controls {
 
 /* label focus color for contact form */
 .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-    color: #1565c0 !important;
+    color: #1191CC !important;
    }
 
 .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-    color: #1565c0 !important;
+    color: #1191CC !important;
 }
 
 /* label underline focus color for contact form */
 .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #1565c0 !important;
-    box-shadow: 0 1px 0 0 #1565c0 !important;
+    border-bottom: 1px solid #1191CC !important;
+    box-shadow: 0 1px 0 0 #1191CC !important;
 }
 
 .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #1565c0 !important;
-    box-shadow: 0 1px 0 0 #1565c0 !important;
+    border-bottom: 1px solid #1191CC !important;
+    box-shadow: 0 1px 0 0 #1191CC !important;
 }
 
-.material-icons{
+.material-icons {
     color: #ffffff !important;
+}
+
+.material-icons:hover {
+    color: #1191CC !important;
 }
   
 .material-icons.active {
-    color: #1565c0 !important;
+    color: #1191CC !important;
 }
 
 .page-footer {

@@ -44,10 +44,10 @@
                     <a href="#" data-activates="mobile-demo" class="button-collapse right-align"><i class="material-icons">menu</i></a>
 
                     <ul class="right hide-on-med-and-down" id="navList">
-                        <li><a href="#landing"><i class="material-icons left">home</i>Home</a></li>
-                        <li><a href="#intro"><i class="material-icons left">info</i>About Me</a></li>
-                        <li><a href="#projects"><i class="material-icons left">computer</i>Projects</a></li>
-                        <li><a href="#contact"><i class="material-icons left">contact_mail</i>Contact</a></li>
+                        <li><a href="#landing" class="hoverable"><i class="material-icons left">home</i>Home</a></li>
+                        <li><a href="#intro" class="hoverable"><i class="material-icons left">info</i>About Me</a></li>
+                        <li><a href="#projects" class="hoverable"><i class="material-icons left">computer</i>Projects</a></li>
+                        <li><a href="#contact" class="hoverable"><i class="material-icons left">contact_mail</i>Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -114,7 +114,7 @@
     <div class="section" style="background-color: #141414;">
         <div class="container">
             <h4 class="header center"><b>SOME THINGS I'VE MADE:</b></h4>
-            <h6 class="header center italicizeMe">Click any project to see a short description of and a link to its Github repository</h6>
+            <h6 class="header center italicizeMe">Click any project to see a short description and a link to its Github repository</h6>
             <br>
 
             
@@ -138,7 +138,7 @@
                     
                         <div class="card-reveal black">
                             <span class="card-title purple-text text-lighten-5">Gif Me Some Space<i class="mdi-navigation-close right"></i></span>
-                            <p>A simple site I made that populates the page with relevant gifs based on keyword searches from user input and button presses using the GIPHY API. The theme is space, so the first buttons that appear on the navbar are all space themed, but users are free to add any additional themes they would like using the form on the page.</p>
+                            <p>A simple site I made for my full-stack coding bootcamp that populates the page with relevant gifs based on keyword searches from user input and button presses using the GIPHY API. The theme is space, so the first buttons that appear on the navbar are all space themed, but users are free to add any additional themes they would like using the form on the page. Upon adding a theme, it will appear as a new button, which the user can press for more gifs based on that theme.</p>
                             <br>
                             <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/AJAX-Gif-Finder" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
@@ -162,36 +162,37 @@
                         
                         <div class="card-reveal black">
                             <span class="card-title purple-text text-lighten-5">Kender<i class="mdi-navigation-close right"></i></span>
-                            <p>An app that allows users to input some of their interests as well as their location, and it will make calls to multiple API's to update the page with some relevant music playlists, upcoming events near their location, and a 3 day weather forecast.</p>
+                            <p>I was part of a team that made this app for our full-stack coding bootcamp. It allows users to input some of their interests as well as their location, and it will make calls to multiple API's to update the page with some relevant music playlists, upcoming events near their location, and a 3 day weather forecast. Users can sign in or sign up if it is their first time visiting, and this data is stored in a Firebase database for database persistence.</p>
                             <br>
                             <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/Project-1" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
                     </div>
                 </div>
             
-                <!-- Overwatch trivia game -->
+                <!-- Bamazon-mySQL  -->
                 <div class="col s12 m12 l4">
                     <div class="card small black hoverable">
 
                         <div class="card-image waves-effect waves-block waves-light">
                             <video class="activator responsive-video" autoplay loop muted playsinline>
-                                    <source src="assets/images/overwatch-trivia-vid-demo.mp4" type="video/mp4">
+                                <source src="assets/images/bamazon-manager-demo.mp4" type="video/mp4">
                             </video>
                         </div>
-                        
+                            
                         <div class="card-content">
-                            <span class="card-title activator purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-more-vert right"></i></span>
-                            <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/TriviaGame/" target="_blank">[TRY ME]</a></p>
+                            <span class="card-title activator purple-text text-lighten-5">Bamazon<i class="mdi-navigation-more-vert right"></i></span>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/MySQL-Bamazon" target="_blank">[CLI app, repo only]</a></p>
                         </div>
-
-                        <div class="card-reveal black">
-                            <span class="card-title purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-close right"></i></span>
-                            <p>A timed trivia game I made for my full-stack coding bootcamp. Page elements are dynamically updated by using the jQuery library and JavaScript timeout functionalitiess. The theme and questions are based on the game Overwatch!</p>
+                        
+                        <div class="card-reveal  black">
+                            <span class="card-title purple-text text-lighten-5">Bamazon CLI Storefront<i class="mdi-navigation-close right"></i></span>
+                            <p>A command line interface storefront app I made for my full-stack coding bootcamp. It uses a MySQL database on the back-end to store its product information, and relies on the npm inquirer package to display prompts and track user choices as well as the mysql package to establish database connectivity. I also utilized the cli_table2 package to organize the inventory into more readable tables within the command line.</p>
                             <br>
-                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/TriviaGame" target="_blank"><u>Github Repo Link</u></a></p>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/MySQL-Bamazon" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
-                    </div>
+                    </div> 
                 </div>
+                
 
             <div class="row">
             
@@ -212,7 +213,7 @@
                         
                         <div class="card-reveal  black">
                             <span class="card-title purple-text text-lighten-5">Grandpa's Pills<i class="mdi-navigation-close right"></i></span>
-                            <p>A "crystals collector" style number-guessing game that I made. I used HTML and CSS to make and style the content of the page, Javascript to create my game functionality, and the jQuery library to dynamically update elements on the page. I also use a few css animations from the animate.css CDN.</p>
+                            <p>A "crystals collector" style number-guessing game that I made for my full-stack bootcamp. I used HTML and CSS to make and style the content of the page, Javascript to create my game functionality, and the jQuery library to dynamically update elements on the page. I also use a few css animations from the animate.css CDN.</p>
                             <br>
                             <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/unit-4-game" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
@@ -236,34 +237,35 @@
                         
                         <div class="card-reveal  black">
                             <span class="card-title purple-text text-lighten-5">LIRI Bot<i class="mdi-navigation-close right"></i></span>
-                            <p>A command line Node.js app I made that takes in parameters and gives you back data by using the axios package to make calls to the Bands in Town, Spotify and OMDB APIs. It utilizes NPM to manage various node packages such as fs, moment, chalk, and the Node-Spotify-API.</p>
+                            <p>A command line Node.js app I made for my full-stack coding bootcamp. It takes in parameters and returns data to users by using the axios package to make calls to the Bands in Town, Spotify or OMDB APIs. Users can search for movies, upcoming concerts, or songs, and will be given data about them in their command line. It utilizes NPM to manage various node packages such as fs, moment, chalk, and the Node-Spotify-API.</p>
                             <br>
                             <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/liri-node-app" target="_blank"><u>Github Repo Link</u></a></p>
                         </div>
                     </div> 
                 </div>   
-                <!-- Bamazon-mySQL  -->
+
+                <!-- Overwatch trivia game -->
                 <div class="col s12 m12 l4">
                     <div class="card small black hoverable">
 
                         <div class="card-image waves-effect waves-block waves-light">
                             <video class="activator responsive-video" autoplay loop muted playsinline>
-                                <source src="assets/images/bamazon-manager-demo.mp4" type="video/mp4">
+                                    <source src="assets/images/overwatch-trivia-vid-demo.mp4" type="video/mp4">
                             </video>
                         </div>
-                            
-                        <div class="card-content">
-                            <span class="card-title activator purple-text text-lighten-5">Bamazon<i class="mdi-navigation-more-vert right"></i></span>
-                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/MySQL-Bamazon" target="_blank">[CLI app, repo only]</a></p>
-                        </div>
                         
-                        <div class="card-reveal  black">
-                            <span class="card-title purple-text text-lighten-5">LIRI Bot<i class="mdi-navigation-close right"></i></span>
-                            <p>A command line interface storefront app I made for my full-stack coding bootcamp. It uses a MySQL database on the back-end to store its product information, and relies on the npm inquirer package to display prompts and track user choices as well as the mysql package to establish database connectivity. I also utilized the cli_table2 package to organize the inventory into more readable tables within the command line.</p>
-                            <br>
-                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/MySQL-Bamazon" target="_blank"><u>Github Repo Link</u></a></p>
+                        <div class="card-content">
+                            <span class="card-title activator purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-more-vert right"></i></span>
+                            <p class="purple-text text-lighten-5"><a href="https://thornolan.github.io/TriviaGame/" target="_blank">[TRY ME]</a></p>
                         </div>
-                    </div> 
+
+                        <div class="card-reveal black">
+                            <span class="card-title purple-text text-lighten-5">Overwatch Trivia<i class="mdi-navigation-close right"></i></span>
+                            <p>A timed trivia game I made for my full-stack coding bootcamp. Page elements are dynamically updated by using the jQuery library and JavaScript timeout functionalities. Users only have a small window of time to answer each question, and then they will be informed whether they got the answer right, or given the right answer if they guess incorrectly. The theme and questions are based on the game Overwatch!</p>
+                            <br>
+                            <p class="purple-text text-lighten-5"><a href="https://github.com/ThorNolan/TriviaGame" target="_blank"><u>Github Repo Link</u></a></p>
+                        </div>
+                    </div>
                 </div>         
             </div> <!-- row end -->
 
@@ -305,7 +307,7 @@
                             </div>
                         </div>
 
-                    <button class="btn blue darken-3 waves-effect waves-light" type="submit" name="action">Submit
+                    <button class="btn light-blue darken-2 waves-effect waves-light" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                     </button>
                 </form>
@@ -315,7 +317,7 @@
         
     <!-- FIXED ACTION BUTTON FOR SOCIAL MEDIA-->
     <div class="fixed-action-btn vertical actionButton">
-        <a class="btn-floating btn-large blue darken-3 pulse waves-effect">
+        <a class="btn-floating btn-large light-blue darken-2 pulse waves-effect">
             <i class="fa fa-globe"></i>
         </a>
         <ul>
