@@ -12,10 +12,12 @@ body{
 }
 
 /* google fonts: */
-/* font-family: 'Audiowide', cursive;
-font-family: 'Ubuntu Mono', monospace;
-font-family: 'Monofett', cursive;
- */
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Libre Barcode 128 Text', cursive; 
+*/
+
 
 /* fade in for my picture, logo, and name text */
 
@@ -116,8 +118,8 @@ to   { opacity: 1; }
 }
 
 #mainText {
-    /* font-family: 'Audiowide', cursive;  */
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Libre Barcode 128 Text', cursive; */
 }
 
 /* typewriter effect for title below my name */
@@ -178,6 +180,7 @@ to   { opacity: 1; }
 
 .aboutMe {
     margin-bottom: 5vw;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* styling for videos on project cards */
