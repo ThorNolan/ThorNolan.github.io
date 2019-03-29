@@ -1,17 +1,15 @@
-// Initiate parallax, scrollspy, sidenav, and tooltip functionality
+// Initiate parallax, scrollspy, and sidenav functionality
 $(document).ready(function(){
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
-    $('.tooltipped').tooltip();
-
-    //$('.sidenav').sidenav();
     $('.button-collapse').sideNav({
-        menuWidth: 175,
+        menuWidth: 180,
         closeOnClick: true,
-        edge: 'right'
+        edge: 'left'
     });
     $('input#input_text, textarea#textarea2').characterCounter();
-    // this adds the click to toggle class to my floating action button on smaller screen sizes where the hover effect doesn't implement properly
+
+    // this adds the click to toggle class to my floating action button on smaller screen sizes where the hover effect can't implement properly
     $( window ).resize(function() {
         if($(window).width() <= 640) $(".actionButton").addClass("click-to-toggle");
     });
@@ -29,20 +27,21 @@ $(document).ready(function(){
     // Copy email address to clipboard by clicking on floating action button email icon	
     var clipboard = new ClipboardJS('#email');
 
-	clipboard.on('success', function(e) {
-        var anchorElement = $('#email');
-	    anchorElement.attr('data-tooltip', 'Copied to your clipboard ✅');
-        anchorElement.addClass('success');
-        anchorElement.tooltip();
+    // store my email button and tooltip text in variables
+    var anchorElement = $('#email');
+    var tooltipText = $('.material-tooltip span')
 
-	    // Reset after a timeout
+    // triggers on successful copy to clipboard and alters text within the tooltip to indicate success
+	clipboard.on('success', function(e) {
+
+        tooltipText.html('Copied to your clipboard ✅')
+
+	    // Reset tooltip message after a timeout
 	    anchorElement.mouseleave(function() {
 
-		    setTimeout( function(){
-			    anchorElement.attr('data-tooltip', 'Click to copy my email address to your clipboard!');
-                anchorElement.removeClass('success');
-                anchorElement.tooltip();
-			}, 300);
+		    setTimeout(function(){
+                tooltipText.html('Copy my email to your clipboard!');
+			}, 3000);
 		});
 
 	    e.clearSelection();
