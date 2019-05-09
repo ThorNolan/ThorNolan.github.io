@@ -33,7 +33,7 @@
 </head>
 
 <body>
- 
+   
     <!-- NAVBAR WITH HREF'S FOR SCROLLSPY-->
     <div class="navbar-fixed">     
         <nav class="black topNav">
@@ -44,9 +44,9 @@
                     <a href="#" data-activates="mobile-demo" class="button-collapse right-align"><i class="material-icons">menu</i></a>
 
                     <ul class="right hide-on-med-and-down" id="navList">
-                        <li><a href="#landing" class="hoverable"><i class="material-icons left">home</i>Home</a></li>
-                        <li><a href="#intro" class="hoverable"><i class="material-icons left">info</i>About Me</a></li>
-                        <li><a href="#projects" class="hoverable"><i class="material-icons left">computer</i>Projects</a></li>
+                        <li><a href="#landing" class="hoverable"><i class="material-icons left nav-icons">home</i>Home</a></li>
+                        <li><a href="#intro" class="hoverable"><i class="material-icons left nav-icons">info</i>About Me</a></li>
+                        <li><a href="#projects" class="hoverable"><i class="material-icons left nav-icons">computer</i>Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,43 +54,48 @@
     </div>
     <!-- sidenav for medium and smaller screens -->
     <ul class="side-nav" id="mobile-demo" style="background-color: black;">
-        <li><a href="#landing" style="color: rgba(255,255,255,0.8)"><i class="material-icons left">home</i>Home</a></li>
+        <li class="sidenav-li"><a href="#landing" style="color: rgba(255,255,255,0.8)"><i class="material-icons left">home</i>Home</a></li>
         <li><a href="#intro" style="color: rgba(255,255,255,0.8)"><i class="material-icons left">info</i>About</a></li>
         <li><a href="#projects" style="color: rgba(255,255,255,0.8)"><i class="material-icons left">computer</i>Projects</a></li>
     </ul> 
-        
+    
+    <div id="particles-js">
+    
     <!-- LANDING AREA WITH HEADSHOT/NAME -->
-    <div class="section scrollspy" id="landing">
+    <div class="scrollspy" id="landing">
         <div class="container center">
 
-            <img id="mainPicture" class="center circle responsive-img" src="assets/images/headshot (small & square).jpg">
-
-            <h1 style="color: white; font-family: 'Roboto', sans-serif;" class="center fullName">
-                <span id="firstName">THOR</span><div id="divider"></div><span><b id="lastName">NOLAN</b></span>
+            <h1 class="center fullName">
+                <span id="firstName">THOR </span><span><b id="lastName">NOLAN</b></span>
             </h1>
 
             <!-- typewriter effect will be applied here -->
             <div class="typeHolder">
                 <div class="typewriter">
-                    <h5 id="mainText" class="flow-text">Aspiring Full-Stack Developer</h5>
+                    <h5 id="mainText" class="flow-text">Full-Stack Developer</h5>
                 </div>
             </div>
 
         </div> 
     </div>
+    </div>
         
     <!-- ABOUT ME SECTION -->
     <div class="section mobileGap" style="background-color: #141414;">
         <div class="container">
-            <div class="row center">
-                <div class="col s12 m12 aboutMe">
+            <h4 class="center"><b>ABOUT ME</b></h4>
 
-                    <h4 class="center"><b>ABOUT ME</b></h4>
-                    <p class="flow-text scrollspy left-align" id="intro">I am an aspiring web developer living in the Bay Area, CA. I graduated from Reed College in 2016 and am currently enrolled in UC Berkeley Extension's full-stack coding bootcamp. I am passionate about expanding my coding skill set and gaining experience working with and writing code.</p> 
+            <div class="row center valign-wrapper">
+                <div class="col s3 m3 l3 pic-container">
+                    <img id="mainPicture" class="center circle responsive-img" src="assets/images/headshot (small & square).jpg">
+                </div>
+                <div class="col s9 m9 aboutMe">
+                    
+                    <p class="flow-text scrollspy left-align" id="intro">Hey, I'm Thor. I'm a web developer living in the Bay Area, CA. I graduated from Reed College in 2016 and just recently completed UC Berkeley Extension's full-stack coding bootcamp. I am passionate about expanding my coding skill set and gaining experience working with and writing code.</p> 
                     <br>
                     <p class="flow-text left-align">My areas of interest include technology, philosophy, politics, writing, and gaming, to name some. These interests have informed my motivation to learn how to code and continue to drive me towards new ways of both conceptualizing the problems that I encounter and acquiring new hard skills to better tackle them.</p>
                     <br> 
-                    <p class="flow-text left-align">By the time I finish my bootcamp, I will have significant hands-on experience working with HTML5, CSS3 and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript, jQuery, Node.js and NPM, React, Git, Github, and Heroku, MySQL, MongoDB and Django, as well as Express and the MERN Stack.</p>
+                    <p class="flow-text left-align">I have significant hands-on experience working with HTML5, CSS3 and CSS frameworks such as Bootstrap and Materialize.css, vanilla Javascript plus ES6/7+, jQuery, and React, Node.js and NPM, Express routing, MySQL (with Sequelize), MongoDB (with Mongoose), Git, Github, and Heroku. I am most familiar with the MERN stack, but never shy away from learning and trying new things.</p>
                     <br>
                     <p class="flow-text left-align">When I'm not coding, I enjoy rock climbing at my local climbing gym, or getting outside to climb or hike whenever I can. I love to travel, and have spent significant time exploring and living in other countries. I am also an avid PC gamer, and have enjoyed building and updating the parts of my own PC.</p>
 
@@ -434,8 +439,11 @@
 <!-- link to the jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Compiled and minified JavaScript -->
+<!-- Compiled and minified Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!-- link to particles js library and my own javascript -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="assets/javascript/app.js"></script>
         
 </body>
