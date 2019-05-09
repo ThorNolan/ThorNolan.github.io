@@ -47,14 +47,6 @@ font-family: 'Libre Barcode 128 Text', cursive;
          animation: fadein 2.5s;
 }
 
-
-.divider {
-    display: inline-block;
-    width: 15px;
-    display: hidden;
-    opacity: 0;
-}
-
 #firstname, #lastName {
     word-spacing: 3em;
 }
@@ -109,10 +101,6 @@ to   { opacity: 1; }
     width: 12vw;
 }
 
-.pic-container {
-    margin-right: 4rem;
-}
-
 #intro {
     margin-top: 50px;
 }
@@ -136,7 +124,11 @@ to   { opacity: 1; }
 
 #mainText {
     font-family: 'Roboto Condensed', sans-serif;
-    /* font-family: 'Libre Barcode 128 Text', cursive; */
+}
+
+#mainPicture {
+    margin-top: 35%;
+    max-width: 200px;
 }
 
 .sidenav-li {
@@ -156,7 +148,7 @@ to   { opacity: 1; }
     width: auto;
     display: inline-flex;
     overflow: hidden; 
-    border-right: .15em solid #1191CC; 
+    border-right: .15em solid #0ac8d4; 
     white-space: nowrap; 
     margin: 0 auto; 
     letter-spacing: .15em; 
@@ -174,23 +166,55 @@ to   { opacity: 1; }
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #1191CC; }
+    50% { border-color: #0ac8d4; }
   }
 
 /* changes hover effect on navbar list items */
 .navbar-fixed .nav-wrapper > ul > li > a:hover {
-    color: #1191CC;
+    color: #0ac8d4;
 }
 
 .navbar-fixed .nav-wrapper > ul > li:hover {
-    color: #1191CC;
+    color: #0ac8d4;
 }
 
 .navbar-fixed .nav-wrapper > ul > li > a > i:hover {
-    color: #1191CC;
+    color: #0ac8d4;
 }
 
-/* projects section styling */
+/* Underline From Left effect from Hover.css */
+.listTxt > span {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.listTxt > span:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #FF5C62;
+  height: 3.5px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.listTxt > span:hover:before, .listTxt > span:focus:before, .listTxt > span:active:before {
+    right: 0;
+}
+
+/* =========================== PROJECTS SECTION STYLES =============================================== */
 #projects {
     background-color: rgb(61,61,61);
 }
@@ -219,22 +243,22 @@ video::-webkit-media-controls {
 
 /* label focus color for contact form */
 .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-    color: #1191CC !important;
+    color: #0ac8d4 !important;
    }
 
 .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-    color: #1191CC !important;
+    color: #0ac8d4 !important;
 }
 
 /* label underline focus color for contact form */
 .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #1191CC !important;
-    box-shadow: 0 1px 0 0 #1191CC !important;
+    border-bottom: 1px solid #0ac8d4 !important;
+    box-shadow: 0 1px 0 0 #0ac8d4 !important;
 }
 
 .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #1191CC !important;
-    box-shadow: 0 1px 0 0 #1191CC !important;
+    border-bottom: 1px solid #0ac8d4 !important;
+    box-shadow: 0 1px 0 0 #0ac8d4 !important;
 }
 
 .material-icons {
@@ -242,11 +266,11 @@ video::-webkit-media-controls {
 }
 
 .material-icons:hover {
-    color: #1191CC !important;
+    color: #0ac8d4 !important;
 }
   
 .material-icons.active {
-    color: #1191CC !important;
+    color: #0ac8d4 !important;
 }
 
 .page-footer {
@@ -263,6 +287,11 @@ video::-webkit-media-controls {
 
     .typeHolder {
         margin-top: 15vh;
+    }
+
+    #mainPicture {
+        margin-top: 15px;
+        padding-right: 0;
     }
 }
 
@@ -297,6 +326,11 @@ video::-webkit-media-controls {
 
     .typeHolder {
         margin-top: 15vh;
+    }
+
+    #mainPicture {
+        margin-top: 15px;
+        padding-right: 0;
     }
 }
 
@@ -334,5 +368,10 @@ video::-webkit-media-controls {
 
     .typeHolder {
         margin-top: 15vh;
+    }
+
+    #mainPicture {
+        margin-top: 15px;
+        padding-right: 0;
     }
 }
