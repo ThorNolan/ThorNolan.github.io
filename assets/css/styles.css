@@ -21,7 +21,7 @@ font-family: 'Libre Barcode 128 Text', cursive;
 
 /* fade in for my picture, logo, and name text */
 
-#logo-image, #mainPicture {
+#mainPicture {
 -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
 -moz-animation: fadein 2.5s; /* Firefox < 16 */
  -ms-animation: fadein 2.5s; /* Internet Explorer */
@@ -93,12 +93,13 @@ to   { opacity: 1; }
     z-index: -1;
 } */
 
+#logo-image {
+    width: 35px;
+    height: auto;
+    box-shadow: 0 0 0.5px 0.5px #0ac8d4 inset;
+}
 .brand-logo {
     margin-top: 5px;
-}
-
-#logo-image {
-    width: 8vw;
 }
 
 #intro {
@@ -280,9 +281,6 @@ video::-webkit-media-controls {
 /* Responsiveness for changes in screen size with media queries */
 
 @media only screen and (max-width:768px) {
-    .fullName {
-        display: none;
-    }
 
     .typeHolder {
         margin-top: 15vh;
@@ -298,10 +296,6 @@ video::-webkit-media-controls {
 
     .particles-js-canvas-el {
         height: 100vh !important;
-    }
-
-    #logo-image {
-        width: 27vw;
     }
 
     .mobileGap {
@@ -321,10 +315,6 @@ video::-webkit-media-controls {
         position: -webkit-sticky;
         top: 0px;
         transform: translate(-2px) scale(3);
-    }
-
-    .fullName {
-        display: none;
     }
 
     .typeHolder {
@@ -351,10 +341,6 @@ video::-webkit-media-controls {
         margin-top: 15vh;
     }
 
-    #logo-image {
-        width: 55vw;
-    }
-
     .parallax-container {
         perspective: 1px;
         transform-style: preserve-3d;
@@ -368,12 +354,8 @@ video::-webkit-media-controls {
         transform: translate(-2px) scale(3);
     }
 
-    .fullName {
-        display: none;
-    }
-
     .typeHolder {
-        margin-top: 15vh;
+        margin-top: 4vh;
     }
 
     #mainPicture {
