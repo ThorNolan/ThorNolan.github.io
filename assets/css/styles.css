@@ -14,12 +14,12 @@ body {
 /* google fonts: */
 /* 
 font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Libre Barcode 128 Text', cursive; 
+font-family: 'Rubik', sans-serif;
+font-family: 'Rubik', sans-serif;
+ 
 */
 
-
-/* fade in for my picture, logo, and name text */
+/* fade in for my picture and name text */
 
 #mainPicture {
 -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -94,10 +94,11 @@ to   { opacity: 1; }
 } */
 
 #logo-image {
-    width: 35px;
+    width: 30px;
     height: auto;
     box-shadow: 0 0 0.5px 0.5px #0ac8d4 inset;
 }
+
 .brand-logo {
     margin-top: 5px;
 }
@@ -124,7 +125,7 @@ to   { opacity: 1; }
 }
 
 #mainText {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 #mainPicture {
@@ -136,7 +137,7 @@ to   { opacity: 1; }
     padding-top: 15%;
 }
 
-/* typewriter effect for title below my name */
+/* typewriter effect for title below name */
 .typeHolder {
     display: flex;
 }
@@ -211,7 +212,7 @@ to   { opacity: 1; }
 }
 
 .fab {
-    background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4);
+    background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4) !important;
 }
 
 .fab:hover {
@@ -229,7 +230,11 @@ to   { opacity: 1; }
 
 .aboutMe {
     margin-bottom: 5vw;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.blue-text {
+    color: #0ac8d4 !important
 }
 
 /* styling for videos on project cards */
@@ -303,7 +308,10 @@ video::-webkit-media-controls {
     }
 
     #mainPicture {
+        margin-top: 15px;
+        padding-right: 0;
         margin-top: 17vh;
+        max-width: 110px;
     }
      
     .parallax-container {
@@ -321,10 +329,6 @@ video::-webkit-media-controls {
         margin-top: 15vh;
     }
 
-    #mainPicture {
-        margin-top: 15px;
-        padding-right: 0;
-    }
 }
 
 @media only screen and (max-width:380px) {
@@ -339,6 +343,7 @@ video::-webkit-media-controls {
 
     #mainPicture {
         margin-top: 15vh;
+        max-width: 110px;
     }
 
     .parallax-container {
