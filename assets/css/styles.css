@@ -238,7 +238,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 .skills {
-  height: 35vh;
+  height: 40vh;
   background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4);
   transform: skewY(-0.5deg);
   margin-bottom: -25px;
@@ -456,11 +456,16 @@ video::-webkit-media-controls {
   }
 
   .skills1 {
-    padding-left: 5% !important;
+    padding-left: 0 !important;
   }
   
   .skills2 {
     padding-left: 0 !important;
+  }
+
+  
+  #intro {
+    margin-top: 10px;
   }
 
 }
