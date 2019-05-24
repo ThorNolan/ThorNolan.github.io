@@ -237,11 +237,15 @@ font-family: 'Rubik', sans-serif;
   right: 0;
 }
 
+.skills-header {
+  padding-top: 2.5%;
+}
+
 .skills {
   height: 40vh;
   background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4);
-  transform: skewY(-0.5deg);
-  margin-bottom: -25px;
+  transform: skewY(-1deg);
+  margin-bottom: -35px;
 }
 
 .skills h4, ul > li {
@@ -281,9 +285,6 @@ font-family: 'Rubik', sans-serif;
 }
 
 /* =========================== PROJECTS SECTION STYLES =============================================== */
-#projects {
-  background-color: rgb(61, 61, 61);
-}
 
 #p1 {
   height: 350px;
@@ -296,6 +297,14 @@ font-family: 'Rubik', sans-serif;
 
 .blue-text {
   color: #0ac8d4 !important
+}
+
+.card {
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.07);
 }
 
 /* styling for videos on project cards */
