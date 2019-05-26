@@ -472,6 +472,9 @@ video::-webkit-media-controls {
     padding-left: 0 !important;
   }
 
+  .skills-header {
+    padding-top: 0;
+  }
   
   #intro {
     margin-top: 10px;
