@@ -242,7 +242,7 @@ font-family: 'Rubik', sans-serif;
 }
 
 .skills {
-  height: 40vh;
+  height: 350px;
   background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4);
   transform: skewY(-1deg);
   margin-bottom: -35px;
