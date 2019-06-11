@@ -620,9 +620,28 @@
     </div>
   </footer>
 
+  <!-- PRELOADER -->
+  <div class="loader-container">
+    <!-- <span class="loader"><span class="loader-inner"></span></span> -->
+    <div class="loading-gooey">
+        <div class="loading-gooey__dot loading-gooey__dot--dot3"></div>
+        <div class="loading-gooey__dot loading-gooey__dot--dot2"></div>
+        <div class="loading-gooey__dot loading-gooey__dot--dot1"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="loader-svg">
+        <defs>
+          <filter id="gooey-filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-  <!-- link to clipboard.js library     -->
+  <!-- link to clipboard.js library  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
   <!-- link to the jQuery library -->
