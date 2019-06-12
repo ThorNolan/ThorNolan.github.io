@@ -43,24 +43,21 @@ body {
 }
 
 .loading-gooey__dot--dot3 {
-  /* background-color:#ADDFE0; */
-  background-image: url("../images/icon-tn.png");
+  background-color:#ADDFE0;
   background-size: cover;
   -webkit-animation: "loading-gooeydot3"4s ease infinite, gooey-z-index 6s ease infinite;
   animation: "loading-gooeydot3"4s ease infinite, gooey-z-index 6s ease infinite;
 }
 
 .loading-gooey__dot--dot2 {
-  /* background-color: #76CACC; */
-  background-image: url("../images/icon-tn.png");
+  background-color: #76CACC;
   background-size: cover;
   -webkit-animation: "loading-gooeydot2"4s ease infinite, gooey-z-index 6s -4s ease infinite;
   animation: "loading-gooeydot2"4s ease infinite, gooey-z-index 6s -4s ease infinite;
 }
 
 .loading-gooey__dot--dot1 {
-  /* background-color: #31AFB4; */
-  background-image: url("../images/icon-tn.png");
+  background-color: #31AFB4;
   background-size: cover;
   -webkit-animation: "loading-gooeydot1"4s ease infinite, gooey-z-index 6s -2s ease infinite;
   animation: "loading-gooeydot1"4s ease infinite, gooey-z-index 6s -2s ease infinite;
@@ -577,8 +574,8 @@ video::-webkit-media-controls {
 
 .page-footer {
   color: #8F9AA7;
+  height: 100px;
 }
-
 
 /* Responsiveness for changes in screen size with media queries */
 
