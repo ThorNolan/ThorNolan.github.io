@@ -507,7 +507,11 @@ ul>li {
 /* =========================== PROJECTS SECTION STYLES =============================================== */
 
 #p1 {
-  height: 350px;
+  height: 400px;
+}
+
+.repo-link {
+  padding-left: 1em;
 }
 
 .aboutMe {
