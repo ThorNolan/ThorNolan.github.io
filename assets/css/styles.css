@@ -544,9 +544,6 @@ font-family: 'Montserrat', sans-serif;
   padding-top: 2.5%;
 }
 
-.skills {
-  height: 500px;
-}
 
 .skills1 {
   font-size: 1.5rem;
@@ -716,20 +713,6 @@ video::-webkit-media-controls {
     padding-right: 0;
   }
 
-  .skills1,
-  .skills2,
-  .skills3 {
-    font-size: 1.25rem;
-  }
-
-  .skills1 {
-    padding-left: 30% !important;
-  }
-
-  .skills2 {
-    padding-left: 15% !important;
-  }
-
 }
 
 @media only screen and (max-width:640px) {
@@ -760,20 +743,6 @@ video::-webkit-media-controls {
 
   .typeHolder {
     margin-top: 15vh;
-  }
-
-  .skills1,
-  .skills2,
-  .skills3 {
-    font-size: 1rem;
-  }
-
-  .skills1 {
-    padding-left: 20% !important;
-  }
-
-  .skills2 {
-    padding-left: 5% !important;
   }
 
 }
@@ -810,26 +779,16 @@ video::-webkit-media-controls {
     padding-right: 0;
   }
 
-  .skills1,
-  .skills2,
-  .skills3 {
-    font-size: 0.9rem;
+  #intro {
+    margin-top: 10px;
   }
 
   .skills1 {
-    padding-left: 0 !important;
-  }
-
-  .skills2 {
-    padding-left: 0 !important;
-  }
-
-  .skills-header {
-    padding-top: 0;
-  }
-
-  #intro {
-    margin-top: 10px;
+    font-size: 1.5rem;
+    /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
+    margin-left: 0 !important;
+    margin-right: 7%;
+    min-height: 325px !important;
   }
 
 }
