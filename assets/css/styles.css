@@ -1,12 +1,18 @@
 body {
   background-color: black;
   color: rgba(255, 255, 255, 0.8);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .loader-container {
@@ -239,6 +245,7 @@ body {
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Rubik', sans-serif;
+font-family: 'Montserrat', sans-serif;
 */
 
 /* fade in for picture and name text */
@@ -365,7 +372,8 @@ font-family: 'Rubik', sans-serif;
 }
 
 #mainText {
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 #mainPicture {
@@ -457,31 +465,137 @@ font-family: 'Rubik', sans-serif;
   right: 0;
 }
 
+/* =========================== SKILLS SECTION STYLES =============================================== */
+
+/* wave animation for skills section  */
+.wave {
+  /* opacity: .75; */
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #0ac8d4;
+  width: 530px;
+  height: 550px;
+  margin-left: -265px;
+  margin-top: -260px;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 42%;
+  -webkit-animation: drift 65500ms infinite linear;
+          animation: drift 65500ms infinite linear;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 7%;
+  -webkit-filter: url("#shadowed-goo");
+  filter: url("#shadowed-goo");
+}
+
+.wave.-three {
+  -webkit-animation: drift 22000ms infinite linear;
+          animation: drift 22000ms infinite linear;
+  /* background: linear-gradient(43deg, #0077B5, #0ac8d4); */
+  background: #0ac8d4;
+}
+
+.wave.-two {
+  -webkit-animation: drift 8500ms infinite linear;
+          animation: drift 8500ms infinite linear;
+  /* opacity: .6; */
+  background: #0ac8d4;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
+  z-index: 11;
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .skills-header {
   padding-top: 2.5%;
 }
 
 .skills {
-  height: 350px;
-  background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4);
-  transform: skewY(-1deg);
-  margin-bottom: -35px;
-}
-
-.skills h4,
-ul>li {
-  transform: skewY(1deg);
+  height: 500px;
 }
 
 .skills1 {
   font-size: 1.5rem;
-  padding-left: 35% !important;
+  /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
+  margin-left: -100px !important;
+  margin-right: 7%;
+  min-height: 325px !important;
+}
+
+.skills1 > ul {
+  width: 100%;
+  z-index: 1;
+  line-height: 32px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .skills2 {
   font-size: 1.5rem;
-  padding-left: 20% !important;
-  padding-top: 1.5% !important;
+  /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
+  margin-right: 5%;
+  min-height: 325px !important;
+}
+
+.skills2 > ul {
+  width: 100%;
+  z-index: 1;
+  line-height: 32px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+
+}
+
+.skills3 {
+  font-size: 1.5rem;
+  /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
+  min-height: 325px !important;
+  margin-right: -100px !important;
+}
+
+.skills3 > ul {
+  width: 100%;
+  z-index: 1;
+  line-height: 32px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .resume-container {
@@ -490,11 +604,6 @@ ul>li {
 
 .resume-link {
   color: rgba(255, 255, 255, 0.8);
-}
-
-.skills3 {
-  font-size: 1.5rem;
-  padding-top: 3% !important;
 }
 
 .linkedin-btn {
@@ -519,13 +628,17 @@ ul>li {
   height: 400px;
 }
 
+.projects {
+  background-color: #141414;
+}
+
 .repo-link {
   padding-left: 1em;
 }
 
 .aboutMe {
   margin-bottom: 5vw;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .blue-text {
@@ -533,11 +646,11 @@ ul>li {
 }
 
 .card {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.75s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.07);
+  transform: scale(1.045);
 }
 
 /* styling for videos on project cards */
