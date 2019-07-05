@@ -468,92 +468,81 @@ font-family: 'Montserrat', sans-serif;
 /* =========================== SKILLS SECTION STYLES =============================================== */
 
 /* wave animation for skills section  */
+
 .wave {
-  /* opacity: .75; */
+  width: 900px;
+  height: 875px;
   position: absolute;
-  top: 3%;
-  left: 50%;
-  background: #0ac8d4;
-  width: 530px;
-  height: 550px;
-  margin-left: -265px;
-  margin-top: -260px;
-  -webkit-transform-origin: 50% 48%;
-          transform-origin: 50% 48%;
+  top: -30%;
+  left: 60%;
+  margin-left: -500px;
+  margin-top: -500px;
   border-radius: 42%;
-  -webkit-animation: drift 65500ms infinite linear;
-          animation: drift 65500ms infinite linear;
+  background: #0ac8d4;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+}
+
+.wave-one {
+  -webkit-animation: wave 19s infinite linear;
+  animation: wave 19s infinite linear;
+}
+
+.wave-two {
+  -webkit-animation: wave 35s infinite linear;
+  animation: wave 35s infinite linear;
+}
+
+.wave-three {
+  -webkit-animation: wave 28s infinite linear;
+  animation: wave 28s infinite linear;
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .box {
   position: relative;
   overflow: hidden;
-  border-radius: 7%;
-  -webkit-filter: url("#shadowed-goo");
-  filter: url("#shadowed-goo");
-}
-
-.wave.-three {
-  -webkit-animation: drift 22000ms infinite linear;
-          animation: drift 22000ms infinite linear;
-  /* background: linear-gradient(43deg, #0077B5, #0ac8d4); */
-  background: #0ac8d4;
-}
-
-.wave.-two {
-  -webkit-animation: drift 8500ms infinite linear;
-          animation: drift 8500ms infinite linear;
-  /* opacity: .6; */
-  background: #0ac8d4;
-}
-
-.box:after {
-  content: '';
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
-  z-index: 11;
-}
-
-@-webkit-keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  border-radius: 3%;
 }
 
 .skills-header {
   padding-top: 2.5%;
 }
 
+.skills {
+  margin-bottom: 2%;
+}
 
 .skills1 {
   font-size: 1.5rem;
-  /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
   margin-left: -100px !important;
   margin-right: 7%;
   min-height: 325px !important;
 }
 
 .skills1 > ul {
+  padding-top: 5%;
   width: 100%;
   z-index: 1;
   line-height: 32px;
@@ -564,12 +553,12 @@ font-family: 'Montserrat', sans-serif;
 
 .skills2 {
   font-size: 1.5rem;
-  /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
   margin-right: 5%;
   min-height: 325px !important;
 }
 
 .skills2 > ul {
+  padding-top: 5%;
   width: 100%;
   z-index: 1;
   line-height: 32px;
@@ -581,12 +570,12 @@ font-family: 'Montserrat', sans-serif;
 
 .skills3 {
   font-size: 1.5rem;
-  /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
   min-height: 325px !important;
   margin-right: -100px !important;
 }
 
 .skills3 > ul {
+  padding-top: 5%;
   width: 100%;
   z-index: 1;
   line-height: 32px;
@@ -785,8 +774,7 @@ video::-webkit-media-controls {
 
   .skills1 {
     font-size: 1.5rem;
-    /* background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4); */
-    margin-left: 0 !important;
+    margin-left: 0px !important;
     margin-right: 7%;
     min-height: 325px !important;
   }
