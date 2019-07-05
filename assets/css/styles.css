@@ -484,6 +484,14 @@ ul>li {
   padding-top: 1.5% !important;
 }
 
+.resume-container {
+  margin-top: 5%;
+}
+
+.resume-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .skills3 {
   font-size: 1.5rem;
   padding-top: 3% !important;
