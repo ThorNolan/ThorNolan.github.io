@@ -244,7 +244,6 @@ body {
 /* 
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
-font-family: 'Rubik', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
@@ -532,13 +531,15 @@ font-family: 'Montserrat', sans-serif;
 
 .skills {
   margin-bottom: 2%;
+  margin-left: -10% !important;
+  margin-right: -10% !important;
 }
 
 .skills1 {
   font-size: 1.5rem;
-  margin-left: -100px !important;
-  margin-right: 7%;
   min-height: 325px !important;
+  max-width: 425px;
+  margin-right: 7%;
 }
 
 .skills1 > ul {
@@ -553,8 +554,9 @@ font-family: 'Montserrat', sans-serif;
 
 .skills2 {
   font-size: 1.5rem;
-  margin-right: 5%;
   min-height: 325px !important;
+  max-width: 425px;
+  margin-right: 7%;
 }
 
 .skills2 > ul {
@@ -571,7 +573,7 @@ font-family: 'Montserrat', sans-serif;
 .skills3 {
   font-size: 1.5rem;
   min-height: 325px !important;
-  margin-right: -100px !important;
+  max-width: 425px;
 }
 
 .skills3 > ul {
@@ -770,13 +772,6 @@ video::-webkit-media-controls {
 
   #intro {
     margin-top: 10px;
-  }
-
-  .skills1 {
-    font-size: 1.5rem;
-    margin-left: 0px !important;
-    margin-right: 7%;
-    min-height: 325px !important;
   }
 
 }
