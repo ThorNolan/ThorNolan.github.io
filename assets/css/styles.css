@@ -577,6 +577,10 @@ font-family: 'Montserrat', sans-serif;
   margin-right: -10% !important;
 }
 
+.list-skills {
+  color: rgba(0,0,0,0.9);
+}
+
 .skills1 {
   font-size: 1.5rem;
   min-height: 325px !important;
