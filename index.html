@@ -3,7 +3,7 @@
   Website designed and coded by Thor Nolan - 2019
   Welcome 👋
 
--->  
+-->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -13,7 +13,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143344349-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-143344349-1');
@@ -40,7 +43,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <!-- link to font-awesome, materialize icons, and google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto|Roboto+Condensed|Rubik"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -56,12 +60,13 @@
     <nav class="black topNav">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo" title="Hi, I'm Thor Nolan'"><img id="logo-image" src="assets/images/icon-tn.png"></a>
+          <a href="#" class="brand-logo" title="Hi, I'm Thor Nolan'"><img id="logo-image"
+              src="assets/images/icon-tn.png"></a>
           <!-- this triggers a side nav bar for smaller screens -->
           <a href="#" data-activates="mobile-demo" class="button-collapse right-align"><i
               class="material-icons">menu</i></a>
 
-          <ul class="right hide-on-med-and-down" id="navList">
+          <ul class="right hide-on-med-and-down montserrat" id="navList">
             <li><a href="#landing" class="hoverable hvr-underline-from-center"><span>/ home</span></a></li>
             <li><a href="#intro" class="hoverable hvr-underline-from-center"><span>/ about</span></a>
             </li>
@@ -73,11 +78,11 @@
     </nav>
   </div>
   <!-- sidenav for medium and smaller screens -->
-  <ul class="side-nav" id="mobile-demo" style="background-color: black;">
-    <li class="sidenav-li"><a href="#landing" style="color: rgba(255,255,255,0.8)"><i
-          class="material-icons left">home</i>Home</a></li>
-    <li><a href="#intro" style="color: rgba(255,255,255,0.8)"><i class="material-icons left">info</i>About</a></li>
-    <li><a href="#projects" style="color: rgba(255,255,255,0.8)"><i class="material-icons left">computer</i>Projects</a>
+  <ul class="side-nav montserrat" id="mobile-demo" style="background-color: black;">
+    <li><a href="#landing" class="hoverable hvr-underline-from-center"><span>/ home</span></a></li>
+    <li><a href="#intro" class="hoverable hvr-underline-from-center"><span>/ about</span></a>
+    </li>
+    <li><a href="#projects" class="hoverable hvr-underline-from-center"><span>/ projects</a></span>
     </li>
   </ul>
 
@@ -130,9 +135,13 @@
             time exploring and living in other countries. I also built my own PC that I use for playing games or working
             with 3D rendering software like the Unity engine.</p>
           <br>
-          <div class="left-align resume-container">
-            <p class="flow-text"><a href="assets/images/resume.pdf" target="_blank" class="resume-link hvr-underline-from-center"><span>→ <i>my resume</i></span></a></p>
-          </div>  
+          <div class="center-align resume-container">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="border-animate" height="60" width="320" />
+            </svg>
+
+            <p class="flow-text outlined-text"><a href="assets/images/resume.pdf" target="_blank" class="resume-link">→ my resume</a></p>
+          </div>
 
         </div>
       </div>
@@ -145,12 +154,12 @@
         <div class="col s12 m4 l4 skills1 box">
           <div class="wave wave-one"></div>
           <ul class="montserrat">
+            <li><i class="material-icons tiny">keyboard_arrow_right</i> React.js </li>
             <li><i class="material-icons tiny">keyboard_arrow_right</i> Semantic HTML5 </li>
             <li><i class="material-icons tiny">keyboard_arrow_right</i> CSS3, Bootstrap and Materialize </li>
             <li><i class="material-icons tiny">keyboard_arrow_right</i> Currently learning Sass </li>
             <li><i class="material-icons tiny">keyboard_arrow_right</i> vanilla Javascript plus ES6/7+ </li>
             <li><i class="material-icons tiny">keyboard_arrow_right</i> jQuery </li>
-            <li><i class="material-icons tiny">keyboard_arrow_right</i> React.js </li>
           </ul>
         </div>
 
@@ -180,6 +189,10 @@
       </div>
     </div>
   </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+    class="transition-svg hide-on-small-only">
+    <path d="M0 0 L50 100 L100 0 Z" />
+  </svg>
 
   <!--SECOND PARALLAX SECTION-->
   <section id="p1" class="parallax-container">
@@ -214,7 +227,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">GigHub.io<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://gighub-io.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ltcondon/Project-3" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://gighub-io.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a
+                  href="https://github.com/ltcondon/Project-3" class="blue-text repo-link" target="_blank">[Github
+                  Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -222,7 +237,8 @@
                   class="mdi-navigation-close right"></i></span>
               <p>A full-stack MERN app I created with a team as the final project for our bootcamp.
                 GigHub lets users log in to the app with their LinkedIn account and track their job
-                search progress. We utilized the LinkedIn OAuth API for user sign-in/sign-up, and store user data in a Mongo database. Users can add
+                search progress. We utilized the LinkedIn OAuth API for user sign-in/sign-up, and store user data in a
+                Mongo database. Users can add
                 jobs that they’re interested in applying for and track progress on jobs they’ve already
                 applied for, they can also view other user’s statistics in applying for similar
                 positions to compare their own experience.</p>
@@ -244,7 +260,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">EventPRO<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://limitless-fortress-24134.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/EventPRO" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://limitless-fortress-24134.herokuapp.com/" class="blue-text"
+                  target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/EventPRO"
+                  class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -274,7 +292,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">Memory Color Clicker<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://thornolan.github.io/React-Memory-Game/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/React-Memory-Game" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://thornolan.github.io/React-Memory-Game/" class="blue-text"
+                  target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/React-Memory-Game"
+                  class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -309,7 +329,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">GIF Me Some Space<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://thornolan.github.io/AJAX-Gif-Finder/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/AJAX-Gif-Finder" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://thornolan.github.io/AJAX-Gif-Finder/" class="blue-text"
+                  target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/AJAX-Gif-Finder"
+                  class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -339,7 +361,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">MERN Google Books Search<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://stormy-badlands-29590.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/React-Reading-List" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://stormy-badlands-29590.herokuapp.com/" class="blue-text"
+                  target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/React-Reading-List"
+                  class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
             </div>
 
             <div class="card-reveal  black">
@@ -374,7 +398,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">Existential Friend Finder<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://limitless-dawn-28902.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/Friend-Finder" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://limitless-dawn-28902.herokuapp.com/" class="blue-text"
+                  target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/Friend-Finder"
+                  class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -406,7 +432,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">Overwatch Trivia<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://thornolan.github.io/TriviaGame/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/TriviaGame" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://thornolan.github.io/TriviaGame/" class="blue-text" target="_blank">[Deployed]</a><a
+                  href="https://github.com/ThorNolan/TriviaGame" class="blue-text repo-link" target="_blank">[Github
+                  Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -437,7 +465,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">Pass the Butter<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://damp-oasis-43666.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/Pass-the-Butter" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://damp-oasis-43666.herokuapp.com/" class="blue-text" target="_blank">[Deployed]</a><a
+                  href="https://github.com/ThorNolan/Pass-the-Butter" class="blue-text repo-link"
+                  target="_blank">[Github Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -498,7 +528,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">Grandpa's Pills<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://thornolan.github.io/unit-4-game/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/unit-4-game" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://thornolan.github.io/unit-4-game/" class="blue-text" target="_blank">[Deployed]</a><a
+                  href="https://github.com/ThorNolan/unit-4-game" class="blue-text repo-link" target="_blank">[Github
+                  Repo]</a></p>
             </div>
 
             <div class="card-reveal  black">
@@ -556,7 +588,9 @@
             <div class="card-content">
               <span class="card-title activator purple-text text-lighten-5">Kender<i
                   class="mdi-navigation-more-vert right"></i></span>
-              <p><a href="https://thornolan.github.io/Project-1/" class="blue-text" target="_blank">[Deployed]</a><a href="https://github.com/ThorNolan/Project-1" class="blue-text repo-link" target="_blank">[Github Repo]</a></p>
+              <p><a href="https://thornolan.github.io/Project-1/" class="blue-text" target="_blank">[Deployed]</a><a
+                  href="https://github.com/ThorNolan/Project-1" class="blue-text repo-link" target="_blank">[Github
+                  Repo]</a></p>
             </div>
 
             <div class="card-reveal black">
@@ -608,7 +642,7 @@
   <!-- FOOTER -->
   <footer class="section page-footer black valign-wrapper">
     <div class="container center-align montserrat">
-      Thor Nolan  &#169; 2019
+      Thor Nolan &#169; 2019
     </div>
   </footer>
 
@@ -635,19 +669,20 @@
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
     <defs>
       <filter id="shadowed-goo">
-          
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-          <feBlend in2="shadow" in="goo" result="goo" />
-          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
+          result="shadow" />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feBlend in2="shadow" in="goo" result="goo" />
+        <feBlend in2="goo" in="SourceGraphic" result="mix" />
       </filter>
       <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in2="goo" in="SourceGraphic" result="mix" />
       </filter>
     </defs>
   </svg>
