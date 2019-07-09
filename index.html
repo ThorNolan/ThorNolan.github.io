@@ -55,15 +55,16 @@
 
 <body>
 
-  <!-- NAVBAR WITH HREF'S FOR SCROLLSPY-->
+  <!-- MAIN NAV W/ SCROLLSPY-->
   <div class="navbar-fixed">
     <nav class="black topNav">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo" title="Hi, I'm Thor Nolan'"><img id="logo-image"
+          <a href="#" class="brand-logo" title="Thor Nolan | Portfolio"><img id="logo-image"
               src="assets/images/icon-tn.png"></a>
-          <!-- this triggers a side nav bar for smaller screens -->
-          <a href="#" data-activates="mobile-demo" class="button-collapse right-align"><i
+
+          <!-- side-nav trigger -->
+          <a href="#" data-activates="mobile-nav" class="button-collapse right-align"><i
               class="material-icons">menu</i></a>
 
           <ul class="right hide-on-med-and-down montserrat" id="navList">
@@ -77,8 +78,9 @@
       </div>
     </nav>
   </div>
-  <!-- sidenav for medium and smaller screens -->
-  <ul class="side-nav montserrat" id="mobile-demo" style="background-color: black;">
+
+  <!-- SIDE-NAV FOR MED/SM SCREENS -->
+  <ul class="side-nav montserrat" id="mobile-nav" style="background-color: black;">
     <li><a href="#landing" class="hoverable hvr-underline-from-center"><span>/ home</span></a></li>
     <li><a href="#intro" class="hoverable hvr-underline-from-center"><span>/ about</span></a>
     </li>
@@ -86,9 +88,8 @@
     </li>
   </ul>
 
+  <!-- LANDING AREA WITH PARTICLES AND NAME -->
   <div id="particles-js">
-
-    <!-- LANDING AREA WITH HEADSHOT/NAME -->
     <div class="scrollspy" id="landing">
       <div class="container center">
 
@@ -96,7 +97,7 @@
           <span id="firstName">THOR</span><span><b id="lastName">NOLAN</b></span>
         </h1>
 
-        <!-- typewriter effect will be applied here -->
+        <!-- typewriter effect -->
         <div class="typeHolder">
           <div class="typewriter">
             <h5 id="mainText" class="flow-text">Full-Stack Developer</h5>
@@ -148,7 +149,7 @@
 
       <div class="row skills">
         <div class="col s12">
-          <h4 class="center-align skills-header">SKILLS</h4>
+          <h4 class="center-align skills-header"><b>SKILLS</b></h4>
         </div>
 
         <div class="col s12 m4 l4 skills1 box">
@@ -203,7 +204,7 @@
 
   </section>
 
-  <!--PORTFOLIO PROJECTS SECTION WITH CARDS-->
+  <!-- PORTFOLIO PROJECTS SECTION -->
   <section class="section projects">
     <div class="container">
       <h4 class="header center"><b>SELECTED PROJECTS</b></h4>
@@ -612,7 +613,7 @@
     </div>
   </section>
 
-  <!-- FIXED ACTION BUTTON FOR SOCIAL MEDIA-->
+  <!-- FIXED FLOATING ACTION BUTTON FOR ACCOUNT/EMAIL LINKS -->
   <div class="fixed-action-btn vertical actionButton">
     <a class="btn-floating btn-large fab pulse waves-effect">
       <i class="material-icons">info</i>
@@ -622,7 +623,7 @@
       <li>
         <a id="email" data-clipboard-text="tnolan5764@gmail.com"
           class="btn-floating red waves-effect waves-light tooltipped" data-position="left"
-          data-tooltip="Copy my email to your clipboard!"><i class="material-icons">mail</i></a>
+          data-tooltip="Copy my email to your clipboard"><i class="material-icons">mail</i></a>
       </li>
       <!-- github link -->
       <li>
@@ -641,8 +642,34 @@
 
   <!-- FOOTER -->
   <footer class="section page-footer black valign-wrapper">
-    <div class="container center-align montserrat">
-      Thor Nolan &#169; 2019
+    <div class="container center-align">
+      <div class="center-align top-btn-container">
+          <a href="#landing" class="back-to-top tooltipped" data-position="left"
+          data-tooltip="Back to top"><i class="fa fa-chevron-up fa-lg"></i></a>
+      </div>
+
+      <p>Thor Nolan &#169;2019</p>
+
+      <ul class="footer-links center-align">
+        <!-- email with tooltip and click to copy to clipboard functionality -->
+        <li>
+          <a id="email" data-clipboard-text="tnolan5764@gmail.com"
+            class="tooltipped footer-a" data-position="bottom"
+            data-tooltip="Copy my email to your clipboard"><i class="fa fa-at footer-icon fa-lg"></i></a>
+        </li>
+        <!-- github link -->
+        <li>
+          <a target="_blank" href="https://github.com/ThorNolan"
+            class="footer-a tooltipped" data-position="bottom"
+            data-tooltip="Github"><i class="fa fa-github footer-icon fa-lg"></i></a>
+        </li>
+        <!-- linkedin link -->
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/thornolan/"
+            class="footer-a tooltipped" data-position="bottom"
+            data-tooltip="LinkedIn"><i class="fa fa-linkedin footer-icon fa-lg"></i></a>
+        </li>
+      </ul>
     </div>
   </footer>
 
@@ -664,28 +691,6 @@
     </svg>
   </div>
   </div>
-
-  <!-- filters -->
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="shadowed-goo">
-
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
-          result="shadow" />
-        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-        <feBlend in2="shadow" in="goo" result="goo" />
-        <feBlend in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feBlend in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-    </defs>
-  </svg>
 
   <script src="assets/javascript/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
