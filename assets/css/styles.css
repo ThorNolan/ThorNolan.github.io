@@ -276,34 +276,34 @@ font-family: 'Montserrat', sans-serif;
 
 /* fade in for picture and name text */
 
-#mainPicture {
-  -webkit-animation: fadein 2.5s;
+/* #mainPicture { */
+  /* -webkit-animation: fadein 2.5s; */
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2.5s;
+  /* -moz-animation: fadein 2.5s; */
   /* Firefox < 16 */
-  -ms-animation: fadein 2.5s;
+  /* -ms-animation: fadein 2.5s; */
   /* Internet Explorer */
-  -o-animation: fadein 2.5s;
+  /* -o-animation: fadein 2.5s; */
   /* Opera < 12.1 */
-  animation: fadein 2.5s;
-}
+  /* animation: fadein 2.5s; */
+/* } */
 
 #firstName {
   padding-right: 0.85rem;
-  -webkit-animation: fadein 1.25s;
+  /* -webkit-animation: fadein 1.25s;
   -moz-animation: fadein 1.25s;
   -ms-animation: fadein 1.25s;
   -o-animation: fadein 1.25s;
-  animation: fadein 1.25s;
+  animation: fadein 1.25s; */
 }
 
 
 #lastName {
-  -webkit-animation: fadein 2.5s;
+  /* -webkit-animation: fadein 2.5s;
   -moz-animation: fadein 2.5s;
   -ms-animation: fadein 2.5s;
   -o-animation: fadein 2.5s;
-  animation: fadein 2.5s;
+  animation: fadein 2.5s; */
 }
 
 #firstname,

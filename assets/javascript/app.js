@@ -19,6 +19,41 @@ $(document).ready(function () {
     if ($(window).width() <= 640) $(".actionButton").addClass("click-to-toggle");
   });
 
+  // reveal ordering with ScrollReveal library
+  $(window).on("load",function(){
+    ScrollReveal().reveal('#firstName', {
+      delay: 100,
+      scale: 0.85,
+      origin: 'left',
+      easing: 'ease-in'
+    });
+
+    ScrollReveal().reveal('#lastName', { 
+      delay: 500, 
+      scale: 0.85,
+      origin: 'right',
+      easing: 'ease-in'
+    });
+
+    ScrollReveal().reveal('.resume-container', { 
+      delay: 600, 
+      easing: 'ease-in'
+    });
+
+    ScrollReveal().reveal('.card', {  
+      easing: 'ease-in',
+      scale: 0.9,
+      interval: 250
+    });
+
+    ScrollReveal().reveal('.back-to-top', {  
+      easing: 'ease-in',
+      scale: 0.85,
+      delay: 150,
+      reset: true
+    });
+  });
+
   // Copy email address to clipboard by clicking on floating action button email icon	
   var clipboard = new ClipboardJS('#email');
 
