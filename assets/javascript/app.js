@@ -36,14 +36,14 @@ $(document).ready(function () {
     });
 
     ScrollReveal().reveal('.resume-container', { 
-      delay: 600, 
+      delay: 350, 
       easing: 'ease-in'
     });
 
     ScrollReveal().reveal('.card', {  
       easing: 'ease-in',
       scale: 0.9,
-      interval: 250
+      interval: 300
     });
 
     ScrollReveal().reveal('.back-to-top', {  
