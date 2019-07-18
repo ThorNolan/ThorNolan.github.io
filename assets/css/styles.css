@@ -671,7 +671,7 @@ font-family: 'Montserrat', sans-serif;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 }
   
 .projects {
@@ -879,7 +879,7 @@ video::-webkit-media-controls {
 @media only screen and (max-width:380px) {
 
   .transition-svg {
-    margin-bottom: 0;
+    margin-bottom: -10%;
     height: 50px;
   }
 
@@ -893,7 +893,11 @@ video::-webkit-media-controls {
     margin-top: -500px;
     border-radius: 42%;
   }
-  
+
+  .skills {
+    margin-left: -5% !important;
+    margin-right: -5% !important;
+  }
 
   .particles-js-canvas-el {
     height: 100vh;
@@ -906,10 +910,6 @@ video::-webkit-media-controls {
 
   .typeHolder {
     margin-top: 4vh;
-  }
-
-  #p1 {
-    margin-top: -35%;
   }
 
   #mainPicture {
