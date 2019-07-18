@@ -788,12 +788,31 @@ video::-webkit-media-controls {
 }
 
 /* Responsiveness for changes in screen size with media queries */
+
+@media only screen and (min-width: 1800px) {
+  .skills1 {
+    margin-right: 8%;
+  }
+
+  .skills2 {
+    margin-right: 8%;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
 
   .skills {
     margin-bottom: 2%;
     margin-left: -10% !important;
     margin-right: -10% !important;
+  }
+
+  .skills1 {
+    margin-right: 7.5%;
+  }
+
+  .skills2 {
+    margin-right: 7.5%;
   }
 
   .transition-svg {
@@ -898,7 +917,7 @@ video::-webkit-media-controls {
 
   .wave {
     width: 600px;
-    height: 575px;
+    height: 597px;
     position: absolute;
     top: 56%;
     left: 115%;
@@ -908,8 +927,12 @@ video::-webkit-media-controls {
   }
 
   .skills {
-    margin-left: -5% !important;
-    margin-right: -5% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .parallax-section {
+    margin-top: -4%;
   }
 
   .particles-js-canvas-el {
