@@ -788,6 +788,19 @@ video::-webkit-media-controls {
 }
 
 /* Responsiveness for changes in screen size with media queries */
+@media only screen and (min-width: 1200px) {
+
+  .skills {
+    margin-bottom: 2%;
+    margin-left: -10% !important;
+    margin-right: -10% !important;
+  }
+
+  .transition-svg {
+    margin-bottom: -0.75%;
+  }
+
+}
 
 @media only screen and (max-width:768px) {
 
