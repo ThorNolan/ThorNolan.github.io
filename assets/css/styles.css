@@ -316,7 +316,6 @@ font-family: 'Montserrat', sans-serif;
 }
 
 #mainText {
-  /* font-family: 'Rubik', sans-serif; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -487,6 +486,8 @@ font-family: 'Montserrat', sans-serif;
   position: relative;
   overflow: hidden;
   border-radius: 3%;
+  min-height: 325px !important;
+  max-width: 425px;
 }
 
 .skills-header {
@@ -505,8 +506,6 @@ font-family: 'Montserrat', sans-serif;
 
 .skills1 {
   font-size: 1.5rem;
-  min-height: 325px !important;
-  max-width: 425px;
   margin-right: 3.5%;
 }
 
@@ -522,8 +521,6 @@ font-family: 'Montserrat', sans-serif;
 
 .skills2 {
   font-size: 1.5rem;
-  min-height: 325px !important;
-  max-width: 425px;
   margin-right: 3.5%;
 }
 
@@ -540,8 +537,6 @@ font-family: 'Montserrat', sans-serif;
 
 .skills3 {
   font-size: 1.5rem;
-  min-height: 325px !important;
-  max-width: 425px;
 }
 
 .skills3 > ul {
@@ -908,6 +903,18 @@ video::-webkit-media-controls {
 
 }
 
+@media only screen and (max-width:415px) {
+
+  .parallax-section {
+    margin-top: -16%;
+  }
+
+  .box {
+    margin-left: 6% !important;
+  }
+
+}
+
 @media only screen and (max-width:380px) {
 
   .transition-svg {
@@ -926,13 +933,19 @@ video::-webkit-media-controls {
     border-radius: 42%;
   }
 
+
+  .box {
+    margin-left: 0 !important;
+  }
+
+
   .skills {
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   .parallax-section {
-    margin-top: -10%;
+    margin-top: -3.5%;
   }
 
   .particles-js-canvas-el {
