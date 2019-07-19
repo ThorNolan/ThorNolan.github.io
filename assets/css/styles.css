@@ -927,12 +927,12 @@ video::-webkit-media-controls {
   }
 
   .skills {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .parallax-section {
-    margin-top: -4%;
+    margin-top: -10%;
   }
 
   .particles-js-canvas-el {

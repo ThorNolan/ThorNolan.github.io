@@ -1,7 +1,7 @@
 // Initiate parallax, scrollspy, and sidenav functionality
 $(document).ready(function () {
-  $('.parallax').parallax();
   $('.scrollspy').scrollSpy();
+  $('.collapsible').collapsible();
   $('.button-collapse').sideNav({
     menuWidth: 180,
     closeOnClick: true,
@@ -68,7 +68,7 @@ $(document).ready(function () {
     ScrollReveal().reveal('.card', {  
       easing: 'ease-in',
       scale: 0.9,
-      interval: 300
+      interval: 175
     });
 
     ScrollReveal().reveal('.back-to-top', {  
