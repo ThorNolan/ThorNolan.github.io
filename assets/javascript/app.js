@@ -80,11 +80,11 @@ $(document).ready(function () {
   });
 
   // Copy email address to clipboard by clicking on floating action button email icon	
-  var clipboard = new ClipboardJS('#email');
+  let clipboard = new ClipboardJS('#email');
 
   // store my email button and tooltip text in variables
-  var anchorElement = $('#email');
-  var tooltipText = $('.material-tooltip span');
+  let anchorElement = $('#email');
+  let tooltipText = $(('.material-tooltip span'));
 
   // triggers on successful copy to clipboard and alters text within the tooltip to indicate success
   clipboard.on('success', function (e) {
@@ -105,20 +105,20 @@ $(document).ready(function () {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 250,
+        "value": 290,
         "density": {
           "enable": true,
           "value_area": 4008.530152163807
         }
       },
       "color": {
-        "value": "#0ac8d4"
+        "value": "#fff"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#0ac8d4"
+          "color": "#fff"
         },
         "polygon": {
           "nb_sides": 4
@@ -152,7 +152,7 @@ $(document).ready(function () {
       "line_linked": {
         "enable": true,
         "distance": 64.13648243462092,
-        "color": "#0ac8d4",
+        "color": "#fff",
         "opacity": 0.33933348590187723,
         "width": 1.4204657549380908
       },
@@ -218,4 +218,7 @@ $(document).ready(function () {
     "retina_detect": true
   });
 
+  var scene = $('#scene').get(0);
+  var parallaxInstance = new Parallax(scene);
+  
 });

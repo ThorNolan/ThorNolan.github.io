@@ -305,8 +305,7 @@ font-family: 'Montserrat', sans-serif;
 #landing {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   width: 100%;
@@ -334,9 +333,6 @@ font-family: 'Montserrat', sans-serif;
 }
 
 /* typewriter effect for title below name */
-.typeHolder {
-  display: flex;
-}
 
 .typewriter {
   margin: auto;
@@ -344,15 +340,27 @@ font-family: 'Montserrat', sans-serif;
 
 .typewriter h5 {
   width: auto;
-  display: inline-flex;
   overflow: hidden;
   border-right: .15em solid #0ac8d4;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
-  animation:
-    typing 2.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  animation: typing 2.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10%;
+}
+
+#moon {
+  margin-left: 23%;
+  margin-top: -18%;
 }
 
 /* typing effect */

@@ -4,8 +4,8 @@
   Welcome 👋
 
 -->
-
-<!DOCTYPE html>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en-us">
 
 <head>
@@ -22,11 +22,11 @@
     gtag('config', 'UA-143344349-1');
   </script>
 
-  <title>Thor Nolan | Portfolio</title>
+  <title>THOR NOLAN | PORTFOLIO</title>
   <meta charset="UTF-8">
   <meta name="keywords"
-    content="web design, web, development, web development, website, thor, nolan, thor nolan, thornolan, california, full-stack, front-end, back-end, coding, coder, programmer, html, css, responsive, javascript, react, node, material, materialize.css">
-  <meta name="description" content="Thor Nolan's Portfolio | Full-stack Web Developer">
+    content="web design, web, development, web development, website, thor, nolan, thor nolan, thornolan, california, full-stack, front-end, back-end, coding, programmer, html, css, responsive, javascript, react, node, material, materialize.css">
+  <meta name="description" content="Thor Nolan's Portfolio | Full-stack Web Developer/Designer">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <!-- link to font-awesome, materialize icons, and google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto|Roboto+Condensed|Rubik"
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Roboto|Roboto+Condensed"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -94,22 +94,34 @@
   </ul>
 
   <!-- LANDING AREA WITH PARTICLES AND NAME -->
-  <div id="particles-js">
+  <div id="particles-js" id="scene">
     <div class="scrollspy" id="landing">
-      <div class="container center">
+      <!-- <div class="container" data-relative-input="true">
 
-        <h1 class="center fullName">
+        <h1 class="fullName" data-depth="0.2">
           <span id="firstName">THOR</span><span><b id="lastName">NOLAN</b></span>
-        </h1>
+        </h1> -->
 
         <!-- typewriter effect -->
-        <div class="typeHolder">
+        <!-- <div class="typeHolder" data-depth="0.6">
           <div class="typewriter">
             <h5 id="mainText" class="flow-text">Full-Stack Developer</h5>
           </div>
-        </div>
+        </div> -->
 
+      <!-- </div> -->
+
+      <div id="main">
+        <div data-relative-input="true" id="scene">
+          <div data-depth="0.4">
+            <img src="assets/images/flat-sun.png" alt="Flat cartoon sun" id="moon">
+          </div>
+          <div data-depth="0.8">
+            <img src="assets/images/eclipsed-planet-text.png" alt="Flat blue planet">
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
@@ -141,7 +153,7 @@
             time exploring and living in other countries. I also built my own PC that I use for playing games or working
             with 3D rendering software like the Unity engine.</p>
           <br>
-          <p class="flow-text left-align">I'm available for freelance opportunities and like to work closely with clients to deliver the optimal site to suit their needs, so if you have a project that's still in the idea phase don't hesitate to contact me.</p>
+          <p class="flow-text left-align">I'm currently available for freelance opportunities and like to work closely with clients to deliver the optimal site to suit their needs, so if you have a project that's still in the idea phase don't hesitate to contact me.</p>
           <br>
           <div class="center-align resume-container">
             <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
@@ -696,13 +708,15 @@
 
   <script src="assets/javascript/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <!-- link to clipboard.js library  -->
+  <!-- clipboard.js library  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-  <!-- link to the jQuery library -->
+  <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Compiled and minified Materialize JavaScript -->
+  <!-- parallax js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <!-- compiled and minified Materialize js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <!-- link to particles js library and my own javascript -->
+  <!-- my js -->
   <script src="assets/javascript/app.js"></script>
 
 </body>
