@@ -7,7 +7,32 @@ $(document).ready(function () {
     closeOnClick: true,
     edge: 'left'
   });
-  $('input#input_text, textarea#textarea2').characterCounter();
+
+  var scrollLink = $('.scroll');
+  
+  // Smooth scrolling
+  scrollLink.click(function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top - 64
+    }, 500);
+  });
+  
+  // Active link switching
+  $(window).scroll(function() {
+    var scrollbarLocation = $(this).scrollTop();
+    
+    scrollLink.each(function() {
+      
+      var sectionOffset = $(this.hash).offset().top - 20;
+      
+      if ( sectionOffset <= scrollbarLocation ) {
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+      }
+    })
+    
+  });
 
   resizeParallax();
 
@@ -218,6 +243,7 @@ $(document).ready(function () {
     "retina_detect": true
   });
 
+  // Enable parallax scene for landing area
   var scene = $('#scene').get(0);
   var parallaxInstance = new Parallax(scene);
   

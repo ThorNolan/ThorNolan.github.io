@@ -64,7 +64,7 @@
     <nav class="black topNav">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo" title="Thor Nolan | Portfolio"><img id="logo-image"
+          <a href="#" class="brand-logo scroll" title="Thor Nolan | Portfolio"><img id="logo-image"
               src="assets/images/icon-tn.png"></a>
 
           <!-- side-nav trigger -->
@@ -73,10 +73,10 @@
           </a>
 
           <ul class="right hide-on-med-and-down montserrat" id="navList">
-            <li><a href="#landing" class="hoverable hvr-underline-from-center"><span>/ home</span></a></li>
-            <li><a href="#about-me" class="hoverable hvr-underline-from-center"><span>/ about</span></a>
+            <li><a href="#landing" class="hoverable hvr-underline-from-center scroll"><span>/ home</span></a></li>
+            <li><a href="#about-me" class="hoverable hvr-underline-from-center scroll"><span>/ about</span></a>
             </li>
-            <li><a href="#projects" class="hoverable hvr-underline-from-center"><span>/ projects</a></span>
+            <li><a href="#projects" class="hoverable hvr-underline-from-center scroll"><span>/ projects</a></span>
             </li>
           </ul>
         </div>
@@ -86,16 +86,16 @@
 
   <!-- SIDE-NAV FOR MED/SM SCREENS -->
   <ul class="side-nav montserrat navigation" id="mobile-nav" style="background-color: black;">
-    <li><a href="#landing" class="hoverable hvr-underline-from-center"><span>/ home</span></a></li>
-    <li><a href="#about-me" class="hoverable hvr-underline-from-center"><span>/ about</span></a>
+    <li><a href="#landing" class="hoverable hvr-underline-from-center scroll"><span>/ home</span></a></li>
+    <li><a href="#about-me" class="hoverable hvr-underline-from-center scroll"><span>/ about</span></a>
     </li>
-    <li><a href="#projects" class="hoverable hvr-underline-from-center"><span>/ projects</a></span>
+    <li><a href="#projects" class="hoverable hvr-underline-from-center scroll"><span>/ projects</a></span>
     </li>
   </ul>
 
   <!-- LANDING AREA WITH PARTICLES AND NAME -->
   <div id="particles-js" id="scene">
-    <div class="scrollspy" id="landing">
+    <div id="landing">
       <!-- <div class="container" data-relative-input="true">
 
         <h1 class="fullName" data-depth="0.2">
@@ -126,9 +126,9 @@
   </div>
 
   <!-- ABOUT ME SECTION -->
-  <section class="section mobileGap" style="background-color: #141414;">
+  <section class="section mobileGap" style="background-color: #141414;" id="about-me">
     <div class="container">
-      <h4 class="center scrollspy" id="about-me"><b>ABOUT ME</b></h4>
+      <h4 class="center"><b>ABOUT ME</b></h4>
 
       <div class="row">
 
@@ -220,9 +220,9 @@
   </section>
 
   <!-- PORTFOLIO PROJECTS SECTION -->
-  <section class="section projects">
+  <section class="section projects" id="projects">
     <div class="container">
-      <h4 class="header center scrollspy" id="projects"><b>SELECTED PROJECTS</b></h4>
+      <h4 class="header center"><b>SELECTED PROJECTS</b></h4>
       <h6 class="header center italicizeMe">Click for more details...</h6>
       <br>
 
@@ -658,7 +658,7 @@
   <footer class="section page-footer black valign-wrapper">
     <div class="container center-align">
       <div class="center-align top-btn-container">
-          <a href="#landing" class="back-to-top tooltipped" data-position="left"
+          <a href="#landing" class="back-to-top tooltipped scroll" data-position="left"
           data-tooltip="Back to top"><i class="fa fa-chevron-up fa-lg"></i></a>
       </div>
 
