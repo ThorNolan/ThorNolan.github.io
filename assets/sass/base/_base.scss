@@ -45,6 +45,10 @@ body {
   -ms-overflow-style: scrollbar;
   overflow-x: hidden !important;
   overflow-y: auto;
+  background-color: rgba(0,0,0,1);
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
   // Stops initial animations until page loads.
   &.pre-animate {

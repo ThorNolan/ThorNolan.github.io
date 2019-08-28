@@ -2,7 +2,8 @@ body {
   background-color: black;
   color: rgba(255, 255, 255, 0.8);
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
 }
 
 *,
@@ -16,16 +17,17 @@ body {
 }
 
 .loader-container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .loading-gooey {
@@ -33,8 +35,8 @@ body {
   height: 155px;
   -webkit-filter: url("#gooey-filter");
   filter: url("#gooey-filter");
-  -webkit-animation: "loading-gooeycontainer"4s ease-in-out infinite;
-  animation: "loading-gooeycontainer"4s ease-in-out infinite;
+  -webkit-animation: "loading-gooeycontainer" 4s ease-in-out infinite;
+  animation: "loading-gooeycontainer" 4s ease-in-out infinite;
 }
 
 .loading-gooey__dot {
@@ -274,48 +276,25 @@ font-family: 'Rubik', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 
-#firstName {
-  padding-right: 0.85rem;
-}
-
-
-#firstname,
-#lastName {
-  word-spacing: 3em;
-}
-
 #logo-image {
-  width: 30px;
+  width: 33px;
   height: auto;
-  box-shadow: 0 0 0.5px 0.5px #0ac8d4 inset;
 }
 
 .brand-logo {
-  margin-top: 5px;
-}
-
-#intro {
-  margin-top: 50px;
-}
-
-.fullName {
-  margin-top: 30vh;
+  margin-top: 18px;
 }
 
 #landing {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  width: 100%;
+  justify-content: center;
+  margin-top: -10%;
   pointer-events: none;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='your_transparent.png', sizingMethod='scale');
-  background: none !important;
-}
-
-#mainText {
-  font-family: 'Montserrat', sans-serif;
+  user-select: none;
 }
 
 #mainPicture {
@@ -331,15 +310,6 @@ font-family: 'Montserrat', sans-serif;
   color: #eee;
   padding-top: 10%;
 } 
-
-#main {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -10%;
-}
 
 #sun {
   margin-left: 23%;
@@ -887,6 +857,22 @@ video::-webkit-media-controls {
 }
 
 @media only screen and (max-width:380px) {
+
+  #sun {
+    margin-left: 23%;
+    margin-top: -18%;
+    width: 380px;
+    height: auto;
+  }
+
+  #eclipsed {
+    width: 380px;
+    height: auto;
+  }
+
+  #landing {
+    margin-top: -25%;
+  }
 
   .transition-svg {
     margin-bottom: -10%;

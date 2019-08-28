@@ -1,5 +1,5 @@
-// Initiate parallax, scrollspy, and sidenav functionality
-$(document).ready(function () {
+$(function() {
+  // Initiate parallax, scrollspy, and sidenav functionality
   $('.scrollspy').scrollSpy();
   $('.collapsible').collapsible();
   $('.button-collapse').sideNav({
@@ -8,38 +8,15 @@ $(document).ready(function () {
     edge: 'left'
   });
 
-  var scrollLink = $('.scroll');
+  const scrollLink = $('.scroll');
   
-  // Smooth scrolling
+  // Smooth scrolling offset by height of top nav element
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - 64
     }, 500);
   });
-  
-  // Active link switching
-  // $(window).scroll(function() {
-  //   var scrollbarLocation = $(this).scrollTop();
-    
-  //   scrollLink.each(function() {
-      
-  //     var sectionOffset = $(this.hash).offset().top - 20;
-      
-  //     if ( sectionOffset <= scrollbarLocation ) {
-  //       $(this).parent().addClass('active');
-  //       $(this).parent().siblings().removeClass('active');
-  //     }
-  //   })
-    
-  // });
-
-  resizeParallax();
-
-  /* resize the parallax image on page resize */
-	$(window).on('resize', function(){
-		resizeParallax();
-	});
 
 	function resizeParallax() {
 		var div_id = 'p1';
@@ -57,7 +34,14 @@ $(document).ready(function () {
 		var newheight = Math.round(divwidth * (pct/100));
 		newheight = newheight  + 'px';
 		div.height(newheight);
-	}
+  }
+  
+  resizeParallax();
+
+  /* resize the parallax image on page resize */
+	$(window).on('resize', function(){
+		resizeParallax();
+	});
 
   // preloader will fade out once page is loaded
   $(window).on("load",function(){
@@ -130,10 +114,10 @@ $(document).ready(function () {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 336,
+        "value": 420,
         "density": {
           "enable": true,
-          "value_area": 2525.2724532232724
+          "value_area": 2550
         }
       },
       "color": {
