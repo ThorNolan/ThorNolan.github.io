@@ -50,21 +50,21 @@ body {
 }
 
 .loading-gooey__dot--dot3 {
-  background-color:#ADDFE0;
+  background-color:#FF4E50;
   background-size: cover;
   -webkit-animation: "loading-gooeydot3"4s ease infinite, gooey-z-index 6s ease infinite;
   animation: "loading-gooeydot3"4s ease infinite, gooey-z-index 6s ease infinite;
 }
 
 .loading-gooey__dot--dot2 {
-  background-color: #76CACC;
+  background-color: #FC913A;
   background-size: cover;
   -webkit-animation: "loading-gooeydot2"4s ease infinite, gooey-z-index 6s -4s ease infinite;
   animation: "loading-gooeydot2"4s ease infinite, gooey-z-index 6s -4s ease infinite;
 }
 
 .loading-gooey__dot--dot1 {
-  background-color: #31AFB4;
+  background-color: #F9D423;
   background-size: cover;
   -webkit-animation: "loading-gooeydot1"4s ease infinite, gooey-z-index 6s -2s ease infinite;
   animation: "loading-gooeydot1"4s ease infinite, gooey-z-index 6s -2s ease infinite;
