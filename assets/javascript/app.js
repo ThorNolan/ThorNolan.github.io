@@ -19,20 +19,20 @@ $(document).ready(function () {
   });
   
   // Active link switching
-  $(window).scroll(function() {
-    var scrollbarLocation = $(this).scrollTop();
+  // $(window).scroll(function() {
+  //   var scrollbarLocation = $(this).scrollTop();
     
-    scrollLink.each(function() {
+  //   scrollLink.each(function() {
       
-      var sectionOffset = $(this.hash).offset().top - 20;
+  //     var sectionOffset = $(this.hash).offset().top - 20;
       
-      if ( sectionOffset <= scrollbarLocation ) {
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-      }
-    })
+  //     if ( sectionOffset <= scrollbarLocation ) {
+  //       $(this).parent().addClass('active');
+  //       $(this).parent().siblings().removeClass('active');
+  //     }
+  //   })
     
-  });
+  // });
 
   resizeParallax();
 
@@ -130,23 +130,23 @@ $(document).ready(function () {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 290,
+        "value": 336,
         "density": {
           "enable": true,
-          "value_area": 4008.530152163807
+          "value_area": 2525.2724532232724
         }
       },
       "color": {
-        "value": "#fff"
+        "value": "#ffffff"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#fff"
+          "color": "#ffffff"
         },
         "polygon": {
-          "nb_sides": 4
+          "nb_sides": 3
         },
         "image": {
           "src": "img/github.svg",
@@ -155,35 +155,35 @@ $(document).ready(function () {
         }
       },
       "opacity": {
-        "value": 0.4734885849793636,
+        "value": 0.5,
         "random": true,
         "anim": {
           "enable": true,
-          "speed": 0.7192807192807193,
-          "opacity_min": 0.5674325674325674,
-          "sync": true
+          "speed": 1,
+          "opacity_min": 0.1998,
+          "sync": false
         }
       },
       "size": {
-        "value": 2.5,
+        "value": 3,
         "random": true,
         "anim": {
-          "enable": true,
-          "speed": 7.192807192807193,
-          "size_min": 0.7992007992007992,
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 64.13648243462092,
-        "color": "#fff",
-        "opacity": 0.33933348590187723,
-        "width": 1.4204657549380908
+        "distance": 13,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 0.75,
         "direction": "none",
         "random": true,
         "straight": false,
@@ -191,8 +191,8 @@ $(document).ready(function () {
         "bounce": false,
         "attract": {
           "enable": true,
-          "rotateX": 2446.3576890600452,
-          "rotateY": 236.7442924896818
+          "rotateX": 1499,
+          "rotateY": 1499
         }
       }
     },
@@ -201,35 +201,30 @@ $(document).ready(function () {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "grab"
+          "mode": "bubble"
         },
         "onclick": {
           "enable": true,
           "mode": "push"
         },
-        "resize": true,
-        "onresize": {
-          "enable": true,
-          "density_auto": true,
-          "density_area": 400 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
-        }
+        "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 263.73626373626377,
+          "distance": 400,
           "line_linked": {
             "opacity": 1
           }
         },
         "bubble": {
-          "distance": 121.81158184520176,
-          "size": 27.972027972027973,
-          "duration": 2,
+          "distance": 200,
+          "size": 4.2,
+          "duration": 1.25,
           "opacity": 8,
           "speed": 3
         },
         "repulse": {
-          "distance": 0,
+          "distance": 105,
           "duration": 0.4
         },
         "push": {

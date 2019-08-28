@@ -330,24 +330,7 @@ font-family: 'Montserrat', sans-serif;
 .side-nav li > a {
   color: #eee;
   padding-top: 10%;
-}
-
-/* typewriter effect for title below name */
-
-.typewriter {
-  margin: auto;
-}
-
-.typewriter h5 {
-  width: auto;
-  overflow: hidden;
-  border-right: .15em solid #0ac8d4;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation: typing 2.5s steps(40, end),
-  blink-caret .75s step-end infinite;
-}
+} 
 
 #main {
   height: 100vh;
@@ -361,30 +344,6 @@ font-family: 'Montserrat', sans-serif;
 #moon {
   margin-left: 23%;
   margin-top: -18%;
-}
-
-/* typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-/* typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: #0ac8d4;
-  }
 }
 
 /* Underline From center effect, customized but originally from Hover.css */
@@ -404,7 +363,7 @@ font-family: 'Montserrat', sans-serif;
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #0ac8d4;
+  background: #FB9C35;
   height: 2.75px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -433,7 +392,7 @@ font-family: 'Montserrat', sans-serif;
   margin-left: -500px;
   margin-top: -500px;
   border-radius: 42%;
-  background: #0ac8d4;
+  background: #FB9C35;
   -moz-filter: blur(0.5px);
   -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
@@ -579,7 +538,7 @@ font-family: 'Montserrat', sans-serif;
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 8px;
-  stroke: #0ac8d4;
+  stroke: #FB9C35;
 }
 
 .outlined-text {
@@ -648,11 +607,15 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .fab {
-  background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4) !important;
+  background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .fab:hover {
-  background: linear-gradient(43deg, #3552b2, #0077B5, #0ac8d4) !important;
+  background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .transition-svg {
@@ -668,7 +631,7 @@ font-family: 'Montserrat', sans-serif;
 
 .parallax-section {
   height: 450px;
-  margin-top: -3%;
+  margin-top: -3.7%;
   z-index: -1000;
 	background-image: url('../images/big-sur.jpg');
 	background-attachment: fixed;
@@ -691,7 +654,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .blue-text {
-  color: #0ac8d4 !important;
+  color: #FB9C35 !important;
 }
 
 .card {
@@ -742,7 +705,7 @@ video::-webkit-media-controls {
 }
 
 .material-icons.active {
-  color: #0ac8d4 !important;
+  color: #FB9C35 !important;
 }
 
 .page-footer {
@@ -761,7 +724,7 @@ video::-webkit-media-controls {
 }
 
 .back-to-top:hover i {
-  color: #0ac8d4;
+  color: #FB9C35;
 }
 
 .footer-links {
@@ -787,7 +750,7 @@ video::-webkit-media-controls {
 }
 
 .footer-a:hover i {
-  color: #0ac8d4;
+  color: #FB9C35;
 }
 
 /* Responsiveness for changes in screen size with media queries */
@@ -819,7 +782,7 @@ video::-webkit-media-controls {
   }
 
   .transition-svg {
-    margin-bottom: -0.75%;
+    margin-bottom: 0;
   }
 
 }
