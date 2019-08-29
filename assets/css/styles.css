@@ -842,22 +842,6 @@ video::-webkit-media-controls {
     margin-top: 15vh;
   }
 
-}
-
-@media only screen and (max-width:415px) {
-
-  .parallax-section {
-    margin-top: -16%;
-  }
-
-  .box {
-    margin-left: 6% !important;
-  }
-
-}
-
-@media only screen and (max-width:380px) {
-
   #sun {
     margin-left: 23%;
     margin-top: -18%;
@@ -873,6 +857,22 @@ video::-webkit-media-controls {
   #landing {
     margin-top: -25%;
   }
+
+}
+
+@media only screen and (max-width:415px) {
+
+  .parallax-section {
+    margin-top: -16%;
+  }
+
+  .box {
+    margin-left: 6% !important;
+  }
+
+}
+
+@media only screen and (max-width:380px) {
 
   .transition-svg {
     margin-bottom: -10%;
