@@ -1,0 +1,121 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for the skills section with wave animations
+// -----------------------------------------------------------------------------
+
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3%;
+  min-height: 325px !important;
+  max-width: 425px;
+  font-size: 1.5rem;
+  font-family: $default;
+  font-weight: 300;
+
+  ul {
+    color: rgba(0,0,0,0.9);
+    padding-top: 5%;
+    width: 100%;
+    z-index: 1;
+    line-height: 32px;
+    text-align: center;
+    @include vendor('transform', 'translate3d(0, 0, 0)');
+  }
+}
+
+.skills {
+  margin-bottom: 10%;
+  margin-left: -15% !important;
+  margin-right: -15% !important;
+
+  h4 {
+    padding-top: 2.5%;
+  }
+
+  .skills-wrapper {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'row');
+    @include vendor('flex-wrap', 'wrap');
+    @include vendor('align-items', 'center');
+    @include vendor('justify-content', 'space-evenly');
+  }
+}
+
+.wave {
+  width: 900px;
+  height: 875px;
+  position: absolute;
+  top: -30%;
+  left: 60%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 42%;
+  background: $highlight;
+  @include vendor('filter', 'blur(0.5px)');
+
+  @include breakpoint('<=medium') {
+    width: 650px;
+    height: 625px;
+    top: 52%;
+    left: 130%;
+    margin-left: -555px;
+    margin-top: -500px;
+  }
+
+  @include breakpoint('<=small') {
+    width: 600px;
+    height: 575px;
+  }
+
+  @include breakpoint('<=xsmall') {
+    width: 600px;
+    height: 597px;
+    margin-left: -625px;
+    margin-top: -475px;
+  }
+}
+
+.wave-one {
+  @include vendor('animation', 'wave 19s infinite linear');
+}
+
+.wave-two {
+  @include vendor('animation', 'wave 35s infinite linear');
+}
+
+.wave-three {
+  @include vendor('animation', 'wave 28s infinite linear');
+}
+
+@-moz-keyframes wave {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

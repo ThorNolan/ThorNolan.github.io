@@ -1,3 +1,88 @@
 // -----------------------------------------------------------------------------
 // This file contains styles for the resume container button with outline animation
 // -----------------------------------------------------------------------------
+
+.resume-container {
+  margin-top: 1%;
+  margin-left: 15%;
+  height: 60px;
+  position: relative;
+  width: 305px;
+  text-decoration: none;
+
+  p {
+    letter-spacing: 2px;
+    line-height: 32px;
+    position: relative;
+    top: -50px;
+    @include vendor('transition', 'all 0.5s');
+    @include vendor('transform', '0.78s ease-in-out');
+
+    a {
+      color: $light-text;
+      text-decoration: none;
+    }
+  }
+
+  .border-animate {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: $highlight;
+  }
+
+  &:hover {
+    .border-animate {
+      @include vendor('animation', '0.5s draw linear forwards')
+    }
+
+    p {
+      transform: scale(1.085);
+    }
+  }
+
+  @include breakpoint('<=small') {
+    margin-left: 5%;
+  }
+}
+
+@-moz-keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+

@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for the projects section
+// -----------------------------------------------------------------------------
+
+.projects {
+  background-color: #141414;
+}
+
+.repo-link {
+  padding-left: 1em;
+}
+
+/* styling for videos on project cards */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.activator video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

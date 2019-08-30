@@ -19,7 +19,7 @@ $(function() {
   });
 
 	function resizeParallax() {
-		var div_id = 'p1';
+		var div_id = 'divider-img';
 		var img_w = 1000; /* the width of your image, in pixels */
 		var img_h = 864; /* the height of your image, in pixels */
 		resize_parallax(div_id,img_w,img_h);

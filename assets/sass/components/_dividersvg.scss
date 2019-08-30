@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for the svg divider component
+// -----------------------------------------------------------------------------
+
+.transition-svg {
+  margin-bottom: -1.5%;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  fill: #141414;
+  background: rgba(0,0,0,0);
+
+  @include breakpoint('>=xlarge') {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint('<=medium') {
+    margin-bottom: 0;
+    .transition-svg {
+      margin-bottom: 0;
+      height: 65px;
+    }
+  }
+
+  @include breakpoint('<=small') {
+    height: 65px;
+  }
+
+  @include breakpoint('<=xsmall') {
+    margin-bottom: -10%;
+    height: 50px;
+  }
+}

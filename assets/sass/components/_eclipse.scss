@@ -6,3 +6,21 @@
   margin-left: 23%;
   margin-top: -18%;
 }
+
+.particles-js-canvas-el {
+  height: 100vh !important;
+}
+
+@include breakpoint('<=small') {
+  #sun {
+    margin-left: 28.5%;
+    margin-top: -18%;
+    width: 380px;
+    height: auto;
+  }
+
+  #eclipsed {
+    width: 380px;
+    height: auto;
+  }
+}

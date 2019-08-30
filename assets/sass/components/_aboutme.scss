@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for the about me section
+// -----------------------------------------------------------------------------
+
+#about-me {
+  background-color: $alt-bg;
+
+  h4 {
+    font-size: 2em;
+    font-family: $display-text;
+    font-weight: 500;
+    color: $light-text;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  p {
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 300;
+    color: $light-text;
+  }
+
+  #mainPicture {
+    margin-top: 35%;
+    max-width: 185px;
+
+    @include breakpoint('<=medium') {
+      margin-top: 15px;
+      padding-right: 0;
+    }
+
+    @include breakpoint('<=small') {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      max-width: 145px;
+    }
+  }
+}
+
+@include breakpoint('<=xsmall') {
+  #intro {
+    margin-top: 10px;
+  }
+}
