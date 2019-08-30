@@ -786,6 +786,12 @@ body {
   margin-top: 5%;
 }
 
+@media screen and (max-width: 736px) {
+  #about-me h4 {
+    font-size: 1.5em;
+  }
+}
+
 #about-me p {
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
@@ -1189,15 +1195,47 @@ body {
   color: #F5F5F5;
 }
 
+@media screen and (max-width: 736px) {
+  #projects h4 {
+    font-size: 1.4em;
+  }
+}
+
 #projects h6 {
   font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #F5F5F5;
+}
+
+#projects .repo-link {
+  padding-left: 1em;
+  color: #FB9C35;
+  font-size: 0.8em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#projects .card-title {
+  font-size: 0.8em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #F5F5F5;
 }
 
-.repo-link {
-  padding-left: 1em;
+#projects .card-content > p > a {
+  color: #FB9C35;
+  font-size: 0.8em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#projects .card-reveal > p {
+  font-size: 0.7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #F5F5F5;
 }
 
 /* styling for videos on project cards */
@@ -1206,6 +1244,9 @@ video::-webkit-media-controls {
 }
 
 .activator video {
+  -moz-object-fit: cover;
+  -webkit-object-fit: cover;
+  -ms-object-fit: cover;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
