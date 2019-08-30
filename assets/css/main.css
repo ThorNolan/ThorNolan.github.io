@@ -793,6 +793,12 @@ body {
   color: #F5F5F5;
 }
 
+@media screen and (max-width: 736px) {
+  #about-me p {
+    font-size: 0.8em;
+  }
+}
+
 #about-me #mainPicture {
   margin-top: 35%;
   max-width: 185px;
@@ -813,6 +819,12 @@ body {
   }
 }
 
+@media screen and (max-width: 736px) {
+  #about-me .about-text {
+    margin-bottom: 25%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #intro {
     margin-top: 10px;
@@ -828,6 +840,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 480px) {
+  #divider-img {
+    background-attachment: local;
+  }
 }
 
 .transition-svg {
@@ -847,9 +865,6 @@ body {
 
 @media screen and (max-width: 980px) {
   .transition-svg {
-    margin-bottom: 0;
-  }
-  .transition-svg .transition-svg {
     margin-bottom: 0;
     height: 65px;
   }
@@ -1162,8 +1177,23 @@ body {
   }
 }
 
-.projects {
+#projects {
   background-color: #141414;
+}
+
+#projects h4 {
+  margin-top: 2.5%;
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #F5F5F5;
+}
+
+#projects h6 {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #F5F5F5;
 }
 
 .repo-link {

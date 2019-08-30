@@ -2,8 +2,23 @@
 // This file contains styles for the projects section
 // -----------------------------------------------------------------------------
 
-.projects {
-  background-color: #141414;
+#projects {
+  background-color: $alt-bg;
+
+  h4 {
+    margin-top: 2.5%;
+    font-size: 2em;
+    font-family: $display-text;
+    font-weight: 500;
+    color: $light-text;
+  }
+
+  h6 {
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 400;
+    color: $light-text;
+  }
 }
 
 .repo-link {

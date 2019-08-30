@@ -19,6 +19,10 @@
     font-family: $default;
     font-weight: 300;
     color: $light-text;
+
+    @include breakpoint('<=small') {
+      font-size: 0.8em;
+    }
   }
 
   #mainPicture {
@@ -34,6 +38,12 @@
       margin-top: 10px;
       margin-bottom: 10px;
       max-width: 145px;
+    }
+  }
+
+  @include breakpoint('<=small') {
+    .about-text {
+      margin-bottom: 25%;
     }
   }
 }

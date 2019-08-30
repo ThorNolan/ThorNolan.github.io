@@ -7,7 +7,7 @@
   left: 0;
   width: 100vw;
   height: 70px;
-  fill: #141414;
+  fill: $alt-bg;
   background: rgba(0,0,0,0);
 
   @include breakpoint('>=xlarge') {
@@ -16,10 +16,7 @@
 
   @include breakpoint('<=medium') {
     margin-bottom: 0;
-    .transition-svg {
-      margin-bottom: 0;
-      height: 65px;
-    }
+    height: 65px;
   }
 
   @include breakpoint('<=small') {
