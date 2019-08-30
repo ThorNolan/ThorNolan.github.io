@@ -2,6 +2,10 @@
 // This file contains styles for the eclipse component on the landing page
 // -----------------------------------------------------------------------------
 
+#particles-js {
+  @include vendor('background', 'linear-gradient(to bottom, #{$bg-dark}, #{$alt-bg})');
+}
+
 #sun {
   margin-left: 23%;
   margin-top: -18%;

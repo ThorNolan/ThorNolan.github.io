@@ -889,6 +889,11 @@ body {
   }
 }
 
+#particles-js {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#141414));
+  background: linear-gradient(to bottom, black, #141414);
+}
+
 #sun {
   margin-left: 23%;
   margin-top: -18%;
