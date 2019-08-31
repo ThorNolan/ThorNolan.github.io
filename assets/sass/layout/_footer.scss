@@ -30,6 +30,10 @@
   .top-btn-container {
     padding-bottom: 2%;
     margin-top: -5%;
+
+    @include breakpoint('<=small') {
+      padding-bottom: 10%;
+    }
   }
 
   .back-to-top {
@@ -50,6 +54,7 @@
 
   li {
     display: inline-block;
+    padding: 0.5em;
   }
 }
 
