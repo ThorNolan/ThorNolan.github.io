@@ -1,6 +1,6 @@
 $(function() {
-  // Initiate parallax, scrollspy, and sidenav functionality
-  $('.scrollspy').scrollSpy();
+  
+  // Initiate collapsible nav menu for medium and smaller screens
   $('.collapsible').collapsible();
   $('.button-collapse').sideNav({
     menuWidth: 180,
@@ -14,7 +14,7 @@ $(function() {
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
-      scrollTop: $(this.hash).offset().top - 64
+      scrollTop: $(this.hash).offset().top - 63
     }, 500);
   });
 
@@ -30,22 +30,9 @@ $(function() {
 
   // reveal ordering with ScrollReveal library
   $(window).on("load",function(){
-    ScrollReveal().reveal('#firstName', {
-      delay: 100,
-      scale: 0.85,
-      origin: 'left',
-      easing: 'ease-in'
-    });
-
-    ScrollReveal().reveal('#lastName', { 
-      delay: 500, 
-      scale: 0.85,
-      origin: 'right',
-      easing: 'ease-in'
-    });
 
     ScrollReveal().reveal('.resume-container', { 
-      delay: 350, 
+      delay: 250, 
       easing: 'ease-in'
     });
 
@@ -68,7 +55,7 @@ $(function() {
 
   // store my email button and tooltip text in variables
   let anchorElement = $('#email');
-  let tooltipText = $(('.material-tooltip span'));
+  let tooltipText = $('span:contains(Copy)');
 
   // triggers on successful copy to clipboard and alters text within the tooltip to indicate success
   clipboard.on('success', function (e) {

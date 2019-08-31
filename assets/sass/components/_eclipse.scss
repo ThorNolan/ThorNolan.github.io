@@ -15,6 +15,13 @@
   height: 100vh !important;
 }
 
+@include breakpoint("<=medium") {
+  #sun {
+    margin-left: 28.5%;
+    margin-top: -18%;
+  }
+}
+
 @include breakpoint('<=small') {
   #sun {
     margin-left: 28.5%;

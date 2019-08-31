@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .resume-container {
-  margin-top: 1%;
+  margin-top: 5%;
   margin-left: 15%;
   height: 60px;
   position: relative;
@@ -38,7 +38,7 @@
     }
 
     p {
-      transform: scale(1.085);
+      @include vendor('transform', 'scale(1.085)')
     }
   }
 

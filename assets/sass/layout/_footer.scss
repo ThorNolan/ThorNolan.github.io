@@ -3,39 +3,54 @@
 // -----------------------------------------------------------------------------
 
 .material-icons {
-  color: #ffffff !important;
+  color: $light-text !important;
 }
 
 .material-icons.active {
-  color: #FB9C35 !important;
+  color: $highlight !important;
 }
 
 .page-footer {
   color: #9e9e9e;
+  font-family: $display-text;
+  font-weight: 500;
   height: 200px;
   padding-top: 2%;
+
+  p {
+    margin-top: 3%;
+    margin-bottom: -5%;
+    font-size: 14px;
+
+    i {
+      color: $highlight;
+    }
+  }
+
+  .top-btn-container {
+    padding-bottom: 2%;
+    margin-top: -5%;
+  }
+
+  .back-to-top {
+    i {
+      color: #9e9e9e;
+    }
+
+    &:hover i {
+      color: $highlight;
+    }
+  }
 }
 
-.top-btn-container {
-  padding-bottom: 3%;
-  margin-top: -5%;
-}
-
-.back-to-top i {
-  color: #9e9e9e;
-}
-
-.back-to-top:hover i {
-  color: #FB9C35;
-}
 
 .footer-links {
   margin-top: 1%;
   list-style-type: none;
-}
 
-.footer-links li {
-  display: inline-block;
+  li {
+    display: inline-block;
+  }
 }
 
 .footer-a {
@@ -45,12 +60,12 @@
   padding-left: 20%;
   padding-right: 20%;
   cursor: pointer;
-}
 
-.footer-a i {
-  color: #9e9e9e;
-}
+  i {
+    color: #9e9e9e;
+  }
 
-.footer-a:hover i {
-  color: #FB9C35;
+  &:hover i {
+    color: $highlight;
+  }
 }

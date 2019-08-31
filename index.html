@@ -90,7 +90,7 @@
   <!-- ECLIPSE LANDING PAGE -->
   <div id="particles-js">
     <div id="landing">
-      <div data-relative-input="true" id="scene">
+      <div data-relative-input="true" data-clip-relative-input="true" id="scene">
         <div data-depth="0.2">
           <img src="assets/images/flat-sun.png" alt="A shining sun with text: portfolio" id="sun">
         </div>
@@ -109,24 +109,23 @@
       <div class="row about-text">
 
         <div class="col s12 m12 l3 pic-container center-align">
-          <img id="mainPicture" class="center circle responsive-img" src="assets/images/headshot (small & square).jpg">
+          <img id="mainPicture" class="center circle responsive-img" src="assets/images/alt-profile-pic.jpg">
         </div>
 
         <div class="col s12 m12 l9">
 
-          <p class="flow-text left-align" id="intro"> I'm a web developer and designer living in
+          <p class="flow-text left-align" id="intro">I'm Thor, a web developer and designer living in
             the Bay Area, CA. I graduated from Reed College in 2016 and recently completed UC Berkeley
             Extension's full-stack coding bootcamp. I'm a passionate learner and am always looking for new ways to expand my skill-set.</p>
           <br>
           <p class="flow-text left-align">I'm interested in technology, design, philosophy, politics, and
-            writing. These interests drive me towards new ways of conceptualizing the problems I encounter and
-            acquiring new hard skills to better tackle them.</p>
+            writing. I appreciate being able to work creatively and working closely with people to come up with ideal solutions.</p>
           <br>
           <p class="flow-text left-align">When I'm not coding, I'm usually rock climbing at my local climbing gym. I love to travel, and have spent significant
-            time exploring and living in other countries. I also built my own PC that I use for playing games or working
+            time exploring and living in other countries. I also built my desktop PC that I use for playing games or working
             with 3D rendering software like the Unity engine.</p>
           <br>
-          <p class="flow-text left-align">I am available for freelance work, so if you have a web project that's still in the idea phase shoot me an email and we can work together!</p>
+          <p class="flow-text left-align">I am available for freelance work, so if you have a web project that's still in the idea phase <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can get started!</p>
           <br>
 
           <div class="center-align resume-container">
@@ -603,7 +602,7 @@
   <!-- FIXED FLOATING ACTION BUTTON FOR ACCOUNT/EMAIL LINKS -->
   <div class="fixed-action-btn vertical actionButton">
     <a class="btn-floating btn-large fab pulse waves-effect">
-      <i class="material-icons">info</i>
+      <i class="material-icons">account_circle</i>
     </a>
     <ul>
       <!-- email with tooltip and click to copy to clipboard functionality -->
@@ -635,14 +634,11 @@
           data-tooltip="Back to top"><i class="fa fa-chevron-up fa-lg"></i></a>
       </div>
 
-      <p>Thor Nolan &#169;2019</p>
-
       <ul class="footer-links center-align">
-        <!-- email with tooltip and click to copy to clipboard functionality -->
+        <!-- email -->
         <li>
-          <a id="email" data-clipboard-text="tnolan5764@gmail.com"
-            class="tooltipped footer-a" data-position="bottom"
-            data-tooltip="Copy my email to your clipboard"><i class="fa fa-at footer-icon fa-lg"></i></a>
+          <a href="mailto:tnolan5764@gmail.com" id="email" class="tooltipped footer-a" data-position="bottom"
+            data-tooltip="Send me an email"><i class="fa fa-at footer-icon fa-lg"></i></a>
         </li>
         <!-- github link -->
         <li>
@@ -657,12 +653,13 @@
             data-tooltip="LinkedIn"><i class="fa fa-linkedin footer-icon fa-lg"></i></a>
         </li>
       </ul>
+
+      <p>Made with <i class="fa fa-heart"></i> by Thor Nolan &#169;2019</p>
     </div>
   </footer>
 
   <!-- PRELOADER -->
   <div class="loader-container">
-    <!-- <span class="loader"><span class="loader-inner"></span></span> -->
     <div class="loading-gooey">
       <div class="loading-gooey__dot loading-gooey__dot--dot3"></div>
       <div class="loading-gooey__dot loading-gooey__dot--dot2"></div>
@@ -681,7 +678,7 @@
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/javascript/anime.min.js"></script>
+  <!-- <script src="assets/javascript/anime.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <!-- clipboard.js library  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
