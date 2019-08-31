@@ -813,6 +813,7 @@ body {
 @media screen and (max-width: 980px) {
   #about-me #mainPicture {
     margin-top: 15px;
+    margin-bottom: 5%;
     padding-right: 0;
   }
 }
@@ -839,7 +840,6 @@ body {
 
 #divider-img {
   height: 450px;
-  margin-top: -3.7%;
   z-index: -1000;
   background-image: url("../images/big-sur.jpg");
   background-attachment: fixed;
@@ -848,7 +848,7 @@ body {
   background-size: cover;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
   #divider-img {
     background-attachment: local;
   }
@@ -1301,6 +1301,12 @@ video::-webkit-media-controls {
           transform: scale(1.085);
 }
 
+@media screen and (max-width: 980px) {
+  .resume-container {
+    margin-left: 28.5%;
+  }
+}
+
 @media screen and (max-width: 736px) {
   .resume-container {
     margin-left: 5%;
@@ -1341,7 +1347,8 @@ video::-webkit-media-controls {
   max-width: 425px;
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  margin-top: 5%;
 }
 
 .box ul {
@@ -1353,6 +1360,14 @@ video::-webkit-media-controls {
   text-align: center;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width: 980px) {
+  .box {
+    font-size: 1em;
+    min-height: 295px !important;
+    max-width: 375px;
+  }
 }
 
 .skills {
@@ -1408,10 +1423,10 @@ video::-webkit-media-controls {
 
 @media screen and (max-width: 980px) {
   .wave {
-    width: 650px;
-    height: 625px;
-    top: 52%;
-    left: 130%;
+    width: 631px;
+    height: 623px;
+    top: 51%;
+    left: 117%;
     margin-left: -555px;
     margin-top: -500px;
   }

@@ -4,7 +4,6 @@
 
 #divider-img {
   height: 450px;
-  margin-top: -3.7%;
   z-index: -1000;
 	background-image: url('../images/big-sur.jpg');
 	background-attachment: fixed;
@@ -12,7 +11,7 @@
 	background-repeat: no-repeat;
   background-size: cover;
   
-  @include breakpoint('<=xsmall') {
+  @include breakpoint('<=medium') {
     background-attachment: local;
   }
 }

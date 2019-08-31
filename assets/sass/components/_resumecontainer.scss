@@ -42,6 +42,10 @@
     }
   }
 
+  @include breakpoint('<=medium') {
+    margin-left: 28.5%;
+  }
+
   @include breakpoint('<=small') {
     margin-left: 5%;
   }
