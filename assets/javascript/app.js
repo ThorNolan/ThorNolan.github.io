@@ -71,11 +71,12 @@ $(function() {
   $(window).scroll(function() {
 		let scrollDistance = $(window).scrollTop();
 
-	$('.page-content').each(function(i) {
-		if ($(this).position().top - 350 <= scrollDistance) {
-			$('.top-nav.active').removeClass('active');
-			$('.top-nav').eq(i).addClass('active');
-		}});
+	  $('.page-content').each(function(i) {
+		  if ($(this).position().top - 350 <= scrollDistance) {
+			  $('.top-nav.active', '#links').removeClass('active');
+			  $('.top-nav').eq(i).addClass('active');
+      }
+    });
   }).scroll();
 
   // this adds the click to toggle class to my floating action button on smaller screen sizes where the hover effect can't implement properly

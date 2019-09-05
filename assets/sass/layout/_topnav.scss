@@ -57,12 +57,18 @@
   }
 }
 
-.side-nav li > a {
-  padding-top: 10%;
-  font-family: $default;
-  color: $light-text;
-  font-weight: 500;
-  text-decoration: none;
+.side-nav {
+  background-color: #000;
+  @include vendor('background', 'linear-gradient(to bottom, #{$bg-dark}, #{$alt-bg})');
+
+  li > a {
+    padding-top: 25%;
+    font-family: $default;
+    color: $light-text;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+  }
 }
 
 .underline {
