@@ -38,10 +38,28 @@ $(function() {
   });
 
   // Grab all navigation elements with the class of "scroll", contextualized for performance
-  const scrollLink = $('#links, #mobile-nav').find('.scroll'); 
+  const scrollLink = $('#links, #mobile-nav').find('.scroll');
+  const scrollBtn = $('#logo-link');
+  const scrollTop = $('#top');
   
   // Smooth scrolling offset by height of top nav element minus a few pixels
   scrollLink.click(function(e) {
+    e.preventDefault();
+
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top - 63
+    }, 500);
+  });
+
+  scrollBtn.click(function(e) {
+    e.preventDefault();
+
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top - 63
+    }, 500);
+  });
+
+  scrollTop.click(function(e) {
     e.preventDefault();
 
     $('body,html').animate({
