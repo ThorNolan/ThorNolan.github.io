@@ -19,10 +19,10 @@ $(function() {
     }, 500);
   });
 
+  // Assign active class to nav links based on scroll position
   $(window).scroll(function() {
 		let scrollDistance = $(window).scrollTop();
 
-		// Assign active class to nav links based on scroll position
 		$('.page-content').each(function(i) {
 				if ($(this).position().top - 65 <= scrollDistance) {
 						$('.top-nav.active').removeClass('active');
