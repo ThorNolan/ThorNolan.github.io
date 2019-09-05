@@ -5,12 +5,13 @@ $(function() {
   $('.button-collapse').sideNav({
     menuWidth: 180,
     closeOnClick: true,
-    edge: 'left'
+    edge: 'right'
   });
 
+  // Grab all navigation elements with the class of "scroll"
   const scrollLink = $('.scroll');
   
-  // Smooth scrolling offset by height of top nav element
+  // Smooth scrolling offset by height of top nav element minus a few pixels
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
@@ -18,10 +19,17 @@ $(function() {
     }, 500);
   });
 
-  // preloader will fade out once page is loaded
-  $(window).on("load",function(){
-    $(".loader-container").fadeOut("slow");
-  });
+  $(window).scroll(function() {
+		let scrollDistance = $(window).scrollTop();
+
+		// Assign active class to nav links based on scroll position
+		$('.page-content').each(function(i) {
+				if ($(this).position().top - 65 <= scrollDistance) {
+						$('.top-nav.active').removeClass('active');
+						$('.top-nav').eq(i).addClass('active');
+				}
+		});
+  }).scroll();
 
   // this adds the click to toggle class to my floating action button on smaller screen sizes where the hover effect can't implement properly
   $(window).resize(function () {
@@ -30,6 +38,13 @@ $(function() {
 
   // reveal ordering with ScrollReveal library
   $(window).on("load",function(){
+
+    // On initial page load, home section will be set to active by default
+    $('.top-nav.active').removeClass('active');
+    $("#default").addClass('active');
+
+    // preloader will fade out once page is loaded
+    $(".loader-container").fadeOut("slow");
 
     ScrollReveal().reveal('.resume-container', { 
       delay: 250, 
