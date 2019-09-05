@@ -1000,8 +1000,8 @@ body {
   background: #FF4E50;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#F9D423), to(#FF4E50));
-  background: linear-gradient(to right, #F9D423, #FF4E50);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9D423), to(#FF4E50));
+  background: linear-gradient(to bottom, #F9D423, #FF4E50);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -1009,8 +1009,8 @@ body {
   background: #FF4E50;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#F9D423), to(#FF4E50));
-  background: linear-gradient(to right, #F9D423, #FF4E50);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9D423), to(#FF4E50));
+  background: linear-gradient(to bottom, #F9D423, #FF4E50);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

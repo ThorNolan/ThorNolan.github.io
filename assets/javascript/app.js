@@ -5,15 +5,45 @@ $(function() {
   $('.button-collapse').sideNav({
     menuWidth: 180,
     closeOnClick: true,
-    edge: 'right'
+    edge: 'left'
   });
 
-  // Grab all navigation elements with the class of "scroll"
-  const scrollLink = $('.scroll');
+  // Reveal ordering with ScrollReveal library
+  $(window).on("load",function(){
+
+    // On initial page load, home section will be set to active by default
+    $('.top-nav.active').removeClass('active');
+    $("#default").addClass('active');
+    
+    // preloader will fade out once page is loaded
+    $(".loader-container").fadeOut("slow");
+    
+    ScrollReveal().reveal('.resume-container', { 
+      delay: 250, 
+      easing: 'ease-in'
+    });
+    
+    ScrollReveal().reveal('.card', {  
+      easing: 'ease-in',
+      scale: 0.9,
+      interval: 175
+    });
+    
+    ScrollReveal().reveal('.back-to-top', {  
+      easing: 'ease-in',
+      scale: 0.85,
+      delay: 150,
+      reset: true
+    });
+  });
+
+  // Grab all navigation elements with the class of "scroll", contextualized for performance
+  const scrollLink = $('#links, #mobile-nav').find('.scroll'); 
   
   // Smooth scrolling offset by height of top nav element minus a few pixels
   scrollLink.click(function(e) {
     e.preventDefault();
+
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - 63
     }, 500);
@@ -23,54 +53,24 @@ $(function() {
   $(window).scroll(function() {
 		let scrollDistance = $(window).scrollTop();
 
-		$('.page-content').each(function(i) {
-				if ($(this).position().top - 65 <= scrollDistance) {
-						$('.top-nav.active').removeClass('active');
-						$('.top-nav').eq(i).addClass('active');
-				}
-		});
+	$('.page-content').each(function(i) {
+		if ($(this).position().top - 350 <= scrollDistance) {
+			$('.top-nav.active').removeClass('active');
+			$('.top-nav').eq(i).addClass('active');
+		}});
   }).scroll();
 
   // this adds the click to toggle class to my floating action button on smaller screen sizes where the hover effect can't implement properly
   $(window).resize(function () {
-    if ($(window).width() <= 640) $(".actionButton").addClass("click-to-toggle");
-  });
-
-  // reveal ordering with ScrollReveal library
-  $(window).on("load",function(){
-
-    // On initial page load, home section will be set to active by default
-    $('.top-nav.active').removeClass('active');
-    $("#default").addClass('active');
-
-    // preloader will fade out once page is loaded
-    $(".loader-container").fadeOut("slow");
-
-    ScrollReveal().reveal('.resume-container', { 
-      delay: 250, 
-      easing: 'ease-in'
-    });
-
-    ScrollReveal().reveal('.card', {  
-      easing: 'ease-in',
-      scale: 0.9,
-      interval: 175
-    });
-
-    ScrollReveal().reveal('.back-to-top', {  
-      easing: 'ease-in',
-      scale: 0.85,
-      delay: 150,
-      reset: true
-    });
+    if ($(window).width() <= 640) $("#floater").addClass("click-to-toggle");
   });
 
   // Copy email address to clipboard by clicking on floating action button email icon	
-  let clipboard = new ClipboardJS('#email');
+  const clipboard = new ClipboardJS('#email');
 
   // store my email button and tooltip text in variables
-  let anchorElement = $('#email');
-  let tooltipText = $('span:contains(Copy)');
+  const anchorElement = $('#email');
+  const tooltipText = $('span:contains(Copy)');
 
   // triggers on successful copy to clipboard and alters text within the tooltip to indicate success
   clipboard.on('success', function (e) {
