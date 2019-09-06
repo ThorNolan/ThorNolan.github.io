@@ -14,16 +14,20 @@
   color: #9e9e9e;
   font-family: $display-text;
   font-weight: 500;
-  height: 200px;
+  height: 250px;
   padding-top: 2%;
 
   p {
     margin-top: 3%;
     margin-bottom: -5%;
-    font-size: 14px;
+    font-size: 11px;
 
     i {
       color: $highlight;
+    }
+
+    @include breakpoint('<=small') {
+      margin-top: 18%;
     }
   }
 
@@ -55,6 +59,7 @@
   li {
     display: inline-block;
     padding: 0.5em;
+    margin: 0 10px;
   }
 }
 
@@ -62,8 +67,6 @@
   display: block;
   color: #9e9e9e;
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
   cursor: pointer;
 
   i {

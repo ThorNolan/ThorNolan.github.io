@@ -11,6 +11,7 @@
     font-family: $display-text;
     font-weight: 500;
     color: $light-text;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 
     @include breakpoint('<=small') {
       font-size: 1.4em;
