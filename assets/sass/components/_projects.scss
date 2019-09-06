@@ -6,12 +6,17 @@
   background-color: $alt-bg;
 
   h4 {
-    margin-top: 2.5%;
+    margin-bottom: 2%;
+    margin-top: 5%;
     font-size: 2em;
     font-family: $display-text;
     font-weight: 500;
     color: $light-text;
     text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+
+    span {
+      border-bottom: 1px dashed $highlight;
+    }
 
     @include breakpoint('<=small') {
       font-size: 1.4em;
@@ -24,6 +29,7 @@
     font-weight: 400;
     font-style: italic;
     color: $light-text;
+    padding: 2%;
   }
 
   .repo-link {

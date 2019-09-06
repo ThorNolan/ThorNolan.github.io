@@ -651,7 +651,7 @@ body {
 
 .page-footer p {
   margin-top: 3%;
-  margin-bottom: -5%;
+  margin-bottom: -2%;
   font-size: 11px;
 }
 
@@ -661,13 +661,14 @@ body {
 
 @media screen and (max-width: 736px) {
   .page-footer p {
-    margin-top: 18%;
+    margin-top: 15%;
   }
 }
 
 .page-footer .top-btn-container {
-  padding-bottom: 2%;
-  margin-top: -5%;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 736px) {
@@ -678,10 +679,16 @@ body {
 
 .page-footer .back-to-top i {
   color: #9e9e9e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
 }
 
 .page-footer .back-to-top:hover i {
   color: #FB9C35;
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px);
 }
 
 .footer-links {
@@ -849,6 +856,10 @@ body {
   margin-bottom: 5%;
   margin-top: 10%;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+#about-me h4 span {
+  border-bottom: 1px dashed #FB9C35;
 }
 
 @media screen and (max-width: 736px) {
@@ -1278,12 +1289,17 @@ body {
 }
 
 #projects h4 {
-  margin-top: 2.5%;
+  margin-bottom: 2%;
+  margin-top: 5%;
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #F5F5F5;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+#projects h4 span {
+  border-bottom: 1px dashed #FB9C35;
 }
 
 @media screen and (max-width: 736px) {
@@ -1298,6 +1314,7 @@ body {
   font-weight: 400;
   font-style: italic;
   color: #F5F5F5;
+  padding: 2%;
 }
 
 #projects .repo-link {
@@ -1346,7 +1363,7 @@ video::-webkit-media-controls {
 
 .resume-container {
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 14.5%;
   height: 60px;
   position: relative;
   width: 305px;
