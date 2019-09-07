@@ -1,12 +1,4 @@
 $(function() {
-  
-  // Initiate collapsible nav menu for medium and smaller screens
-  $('.collapsible').collapsible();
-  $('.button-collapse').sideNav({
-    menuWidth: 180,
-    closeOnClick: true,
-    edge: 'left'
-  });
 
   // Reveal ordering with ScrollReveal library
   $(window).on("load",function(){
