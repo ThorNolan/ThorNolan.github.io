@@ -875,6 +875,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #F5F5F5;
+  text-align: justify;
 }
 
 @media screen and (max-width: 736px) {
@@ -1375,20 +1376,23 @@ video::-webkit-media-controls {
   text-decoration: none;
 }
 
-.resume-container p {
+.resume-container span {
   letter-spacing: 2px;
   line-height: 32px;
   position: relative;
+  display: inline-block;
   top: -50px;
+  text-align: center;
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #F5F5F5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: 0.78s ease-in-out;
   transform: 0.78s ease-in-out;
-}
-
-.resume-container p a {
-  color: #F5F5F5;
-  text-decoration: none;
 }
 
 .resume-container .border-animate {
@@ -1404,9 +1408,9 @@ video::-webkit-media-controls {
   animation: 0.5s draw linear forwards;
 }
 
-.resume-container:hover p {
-  -webkit-transform: scale(1.085);
-  transform: scale(1.085);
+.resume-container:hover span {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 980px) {

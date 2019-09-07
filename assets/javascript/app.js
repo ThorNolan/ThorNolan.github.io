@@ -20,8 +20,8 @@ $(function() {
     
     ScrollReveal().reveal('.flow-reveal', {  
       easing: 'ease-in',
-      distance: '15px',
-      origin: 'right',
+      distance: '25px',
+      origin: 'bottom',
       interval: 115,
       reset: true
     });

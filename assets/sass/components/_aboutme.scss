@@ -29,6 +29,7 @@
     font-family: $default;
     font-weight: 300;
     color: $light-text;
+    text-align: justify;
 
     @include breakpoint('<=small') {
       font-size: 0.8em;

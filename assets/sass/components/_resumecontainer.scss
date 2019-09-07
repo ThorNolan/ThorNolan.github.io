@@ -10,18 +10,21 @@
   width: 305px;
   text-decoration: none;
 
-  p {
+  span {
     letter-spacing: 2px;
     line-height: 32px;
     position: relative;
+    display: inline-block;
     top: -50px;
+    text-align: center;
+    color: $light-text;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 300;
+    color: $light-text;
     @include vendor('transition', 'all 0.5s');
     @include vendor('transform', '0.78s ease-in-out');
-
-    a {
-      color: $light-text;
-      text-decoration: none;
-    }
   }
 
   .border-animate {
@@ -37,8 +40,8 @@
       @include vendor('animation', '0.5s draw linear forwards')
     }
 
-    p {
-      @include vendor('transform', 'scale(1.085)')
+    span {
+      @include vendor('transform', 'scale(1.1)')
     }
   }
 
