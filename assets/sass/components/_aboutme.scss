@@ -4,6 +4,7 @@
 
 #about-me {
   background-color: $alt-bg;
+  overflow-x: hidden;
   @include vendor('background', 'linear-gradient(to bottom, #{$blue-bg}, #{$alt-bg})');
 
   h4 {

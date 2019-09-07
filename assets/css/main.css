@@ -798,9 +798,28 @@ body {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .navigation ul li a span {
+    line-height: 14px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navigation ul li a {
+    padding: 0 8px;
+  }
+}
+
 @media screen and (max-width: 736px) {
   .navigation ul li {
     height: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navigation ul li {
+    height: 14px;
   }
 }
 
@@ -851,6 +870,7 @@ body {
           justify-content: center;
   margin-top: -10%;
   pointer-events: none;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 736px) {
@@ -861,6 +881,7 @@ body {
 
 #about-me {
   background-color: #141414;
+  overflow-x: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(#1F2140), to(#141414));
   background: linear-gradient(to bottom, #1F2140, #141414);
 }

@@ -69,11 +69,24 @@
             line-height: 18px;
             font-size: 14px;
           }
+
+          @include breakpoint('<=xxsmall') {
+            line-height: 14px;
+            font-size: 12px;
+          }
+        }
+
+        @include breakpoint('<=xxsmall') {
+          padding: 0 8px;
         }
       }
 
       @include breakpoint('<=small') {
         height: 18px;
+      }
+
+      @include breakpoint('<=xxsmall') {
+        height: 14px;
       }
     }
   }

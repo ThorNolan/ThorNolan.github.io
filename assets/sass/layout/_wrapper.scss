@@ -11,6 +11,7 @@
   justify-content: center;
   margin-top: -10%;
   pointer-events: none;
+  overflow-x: hidden;
 
   @include breakpoint('<=small') {
     margin-top: -25%;
