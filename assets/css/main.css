@@ -576,6 +576,10 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 320px;
+}
+
+body, html {
+  width: 100%;
   overflow-x: hidden !important;
 }
 
@@ -611,7 +615,6 @@ a:hover, a:active, a:focus {
 
 body {
   -ms-overflow-style: scrollbar;
-  overflow-x: hidden !important;
   overflow-y: auto;
   background-color: black;
   color: rgba(255, 255, 255, 0.8);
