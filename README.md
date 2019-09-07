@@ -19,6 +19,8 @@
 + [Particles.js](https://github.com/VincentGarreau/particles.js/) library to create the animated particle background, I customized the look and animation of the particles by adjusting JSON data that can be found in my main JS file.
 
 + [Parallax.js](https://matthew.wagerfield.com/parallax/) used for my eclipse scene to accomplish the gyroscopic effect based on either device orientation on a tablet or phone or cursor position on a desktop.
+  
++ [ScrollReveal.js](https://scrollrevealjs.org/) lightweight library used on just a few components to reveal them based on user scroll position with simple css animations.
 
 + [Font-awesome](https://fontawesome.com) and [Material Icons](https://material.io/resources/icons/?style=baseline) for icons.
 

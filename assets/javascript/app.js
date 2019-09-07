@@ -18,6 +18,14 @@ $(function() {
     // preloader will fade out once page is loaded
     $(".loader-container").fadeOut("slow");
     
+    ScrollReveal().reveal('.flow-reveal', {  
+      easing: 'ease-in',
+      distance: '15px',
+      origin: 'right',
+      interval: 115,
+      reset: true
+    });
+
     ScrollReveal().reveal('.resume-container', { 
       delay: 250, 
       easing: 'ease-in'
@@ -26,10 +34,10 @@ $(function() {
     ScrollReveal().reveal('.card', {  
       easing: 'ease-in',
       scale: 0.9,
-      interval: 175
+      interval: 145
     });
     
-    ScrollReveal().reveal('.back-to-top', {  
+    ScrollReveal().reveal('#top', {  
       easing: 'ease-in',
       scale: 0.85,
       delay: 150,

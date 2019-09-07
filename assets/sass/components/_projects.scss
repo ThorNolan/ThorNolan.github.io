@@ -4,6 +4,7 @@
 
 #projects {
   background-color: $alt-bg;
+  @include vendor('background', 'linear-gradient(to bottom, #{$alt-bg}, #{$blue-bg})');
 
   h4 {
     margin-bottom: 2%;

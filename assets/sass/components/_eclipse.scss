@@ -3,7 +3,8 @@
 // -----------------------------------------------------------------------------
 
 #particles-js {
-  @include vendor('background', 'linear-gradient(to bottom, #{$bg-dark}, #{$alt-bg})');
+  background: $alt-bg;
+  @include vendor('background', 'linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg})');
 }
 
 #sun {

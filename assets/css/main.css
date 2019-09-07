@@ -846,6 +846,8 @@ body {
 
 #about-me {
   background-color: #141414;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1F2140), to(#141414));
+  background: linear-gradient(to bottom, #1F2140, #141414);
 }
 
 #about-me h4 {
@@ -979,8 +981,9 @@ body {
 }
 
 #particles-js {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#141414));
-  background: linear-gradient(to bottom, black, #141414);
+  background: #141414;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#1F2140));
+  background: linear-gradient(to bottom, black, #1F2140);
 }
 
 #sun {
@@ -1286,6 +1289,8 @@ body {
 
 #projects {
   background-color: #141414;
+  background: -webkit-gradient(linear, left top, left bottom, from(#141414), to(#1F2140));
+  background: linear-gradient(to bottom, #141414, #1F2140);
 }
 
 #projects h4 {
