@@ -19,6 +19,24 @@
   position: absolute;
   left: 57%;
   top: 26%;
+
+  @include breakpoint("<=medium") {
+    display: block;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: 69%;
+    top: 36%;
+  }
+
+  @include breakpoint("<=small") {
+    display: block;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 69%;
+    top: 34%;
+  }
 }
 
 .particles-js-canvas-el {

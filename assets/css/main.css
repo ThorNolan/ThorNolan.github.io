@@ -1037,6 +1037,28 @@ body {
   top: 26%;
 }
 
+@media screen and (max-width: 980px) {
+  #sun-link {
+    display: block;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: 69%;
+    top: 36%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #sun-link {
+    display: block;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 69%;
+    top: 34%;
+  }
+}
+
 .particles-js-canvas-el {
   height: 100vh !important;
 }
