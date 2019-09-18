@@ -8,8 +8,17 @@
 }
 
 #sun {
-  margin-left: 23%;
+  margin-left: 25.5%;
   margin-top: -18%;
+}
+
+#sun-link {
+  display: block;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 57%;
+  top: 26%;
 }
 
 .particles-js-canvas-el {
