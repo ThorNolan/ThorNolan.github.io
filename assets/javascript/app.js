@@ -91,6 +91,7 @@ $(function() {
   // this adds the click to toggle class to my floating action button on smaller screen sizes where the hover effect can't implement properly
   $(window).resize(function () {
     if ($(window).width() <= 640) $("#floater").addClass("click-to-toggle");
+    if ($(window).width() > 640) $("#floater").removeClass("click-to-toggle");
   });
 
   // Copy email address to clipboard by clicking on floating action button email icon	

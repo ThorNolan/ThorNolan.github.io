@@ -954,6 +954,35 @@ body {
   }
 }
 
+#about-me .testimonial {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#about-me .testimonial p {
+  color: #FB9C35;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#about-me .testimonial p span {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 736px) {
+  #about-me .testimonial p span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #about-me .testimonial p {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 736px) {
   #about-me .about-text {
     margin-bottom: 25%;
@@ -1024,7 +1053,7 @@ body {
 }
 
 #sun {
-  margin-left: 25.5%;
+  margin-left: 27.5%;
   margin-top: -18%;
 }
 
