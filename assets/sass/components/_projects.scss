@@ -33,19 +33,25 @@
     padding: 2%;
   }
 
-  .repo-link {
-    padding-left: 1em;
-    color: $highlight;
-    font-size: 0.8em;
-    font-family: $default;
-    font-weight: 400;
-  }
-
   .card-title {
     font-size: 0.8em;
     font-family: $default;
     font-weight: 400;
     color: $light-text;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 2%;
+
+    i {
+      @include vendor('transition', 'all 0.4s');
+      font-size: 22px;
+      margin-left: 0;
+      color: $light-text !important; 
+
+      &:hover {
+        color: $highlight !important;
+      }
+    }
   }
 
   .card-content > p > a {
@@ -55,11 +61,46 @@
     font-weight: 400;
   }
 
-  .card-reveal > p {
-    font-size: 0.7em;
-    font-family: $default;
-    font-weight: 300;
-    color: $light-text;
+  .card-action {
+    p {
+      @include vendor('display', 'flex');
+      @include vendor('flex-direction', 'row');
+      @include vendor('flex-wrap', 'no-wrap');
+      @include vendor('align-items', 'center');
+      @include vendor('justify-content', 'space-evenly');
+
+      a {
+        margin: 0;
+        padding: 0;
+        color: $highlight;
+        font-size: 0.6em;
+        font-family: $default;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .card-reveal {
+    P {
+      font-size: 0.7em;
+      font-family: $default;
+      font-weight: 300;
+      color: $light-text;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #000;
+    }
+
+    &::-webkit-scrollbar {
+      width: 7px;
+	    background-color: #000;
+    }
+
+    &::-webkit-scrollbar-thumb {
+	    background-color: $highlight;
+    }
   }
 }
 
