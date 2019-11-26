@@ -99,18 +99,18 @@ $(function() {
 
   // store my email button and tooltip text in variables
   const anchorElement = $('#email');
-  const tooltipText = $('span:contains(Copy)');
+  const tooltipText = $('span:contains(tno)');
 
   // triggers on successful copy to clipboard and alters text within the tooltip to indicate success
   clipboard.on('success', function (e) {
 
-    tooltipText.html('Copied to your clipboard ✅');
+    tooltipText.html('Copied ✅');
 
     // Reset tooltip message after a timeout
     anchorElement.mouseleave(function () {
 
       setTimeout(function () {
-        tooltipText.html('Copy my email to your clipboard!');
+        tooltipText.html('tnolan5764@gmail.com');
       }, 3000);
     });
 
