@@ -13,7 +13,7 @@
     font-family: $display-text;
     font-weight: 500;
     color: $light-text;
-    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    // text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 
     span {
       border-bottom: 1px dashed $highlight;
@@ -22,6 +22,15 @@
     @include breakpoint('<=small') {
       font-size: 1.4em;
     }
+  }
+
+  h5 {
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 400;
+    color: $light-text;
+    padding: 4%;
+    font-style: italic;
   }
 
   h6 {
