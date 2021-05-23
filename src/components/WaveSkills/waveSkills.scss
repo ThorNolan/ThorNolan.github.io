@@ -1,7 +1,7 @@
 .box {
   position: relative;
   overflow: hidden;
-  border-radius: 7.5%;
+  border-radius: 12px;
   min-height: 325px !important;
   width: 425px;
   font-size: 1.35rem;
@@ -28,6 +28,10 @@
     min-height: 295px !important;
     width: 350px;
     margin: 1.5rem;
+  }
+
+  @include breakpoint('<=small') {
+    border-radius: 5px;
   }
 }
 

@@ -67,7 +67,7 @@ const Work = () => {
           desc="A site for user submitted chapbook creation and sale that I designed and customised using the Squarespace CMS, at the request of my client 
           Staring Problem Press. My goal was to deliver them a customized theme that includes my own HTML and CSS, that would require no further maintanence 
           on their part, which allowed them to focus solely on the commerce aspect of the site." 
-          src={spp} 
+          src={spp}
         />
       </div>
 
@@ -82,7 +82,7 @@ const Work = () => {
           search progress. We utilized the LinkedIn OAuth API for user sign-in/sign-up, and store user data in a
           Mongo database. Users can add jobs they’re interested in applying for and track their application progress, 
           as well as view analytics about their job search progress." 
-          src={gighub} 
+          src={gighub}
         />
         <ProjectCard 
           title="EventPro"
@@ -93,7 +93,7 @@ const Work = () => {
           for our full-stack bootcamp, and my responsibilities included setting up the MVC file
           structure, getting our server up and running, utilizing passport and express so that
           users could create accounts and log in (data persists in a MySQL database), and giving the app a consistent style with css." 
-          src={eventPro} 
+          src={eventPro}
         />
         <ProjectCard 
           title="Memory Color Clicker"
@@ -104,7 +104,7 @@ const Work = () => {
           is built primarily around one stateful app component that keeps track of user clicks,
           user score and high score, and the position of content on the page which needs to be
           re-rendered every time the user clicks." 
-          src={memcc} 
+          src={memcc}
         />
         <ProjectCard 
           title="GIF Me Some Space"
@@ -116,7 +116,7 @@ const Work = () => {
           space themed, but users are free to add any additional themes they would like using the
           form on the page. Upon adding a theme, it will appear as a new button, which the user
           can press for more gifs based on that theme." 
-          src={gifSpace} 
+          src={gifSpace}
         />
         <ProjectCard 
           title="Google Books Search"
@@ -129,7 +129,7 @@ const Work = () => {
           runtime environment. Users can navigate between the search page, where they can search
           for and examine different books, and the saved page, where they can see any books
           they've chosen to add to their collection." 
-          src={mernBooks} 
+          src={mernBooks}
         />
         <ProjectCard 
           title="Existential Friend Finder"
@@ -140,7 +140,7 @@ const Work = () => {
           to provide their name and a link to a photo, and then fill out a short survey consisting
           of 10 existential statements that they can respond to. Upon submission, they will be matched with the person who
           has given the most similar responses to them, with that information being compared against everything in the provisioned database." 
-          src={exiFf} 
+          src={exiFf}
         />
       </div>
   </section>

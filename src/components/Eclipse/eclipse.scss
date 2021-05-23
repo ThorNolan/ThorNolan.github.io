@@ -21,9 +21,38 @@
   margin: 0;
 }
 
+.stars-container {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#stars-0 {
+  background: url("../../images/stars-even-smaller.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#stars-1 {
+  background: url("../../images/stars-smallest.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#stars-2 {
+  background: url("../../images/stars-01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#stars-3 {
+  background: url("../../images/stars-02.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #sun-container, #moon-container {
   margin-top: 3%;
-  margin-left: 28.5%;
+  margin-left: 33%;
   margin-right: auto;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -33,24 +62,25 @@
 }
 
 #sun {
-  margin-left: 27.5%;
-  margin-top: -18%;
+  width: 520px;
+  margin-left: 10%;
+  margin-top: -5%;
 }
 
 #eclipsed {
-  width: 660px;
+  width: 625px;
   height: auto;
 }
 
 @include breakpoint("<=medium") {
   #sun-container, #moon-container {
-    margin-top: 10%;
-    margin-left: 17.5%;
+    margin-top: 15%;
+    margin-left: 18%;
   }
 
   #sun {
-    margin-top: -25%;
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-top: -15%;
   }  
 
   #eclipsed {
@@ -62,13 +92,13 @@
 @include breakpoint('<=small') {
 
   #sun-container, #moon-container {
-    margin-top: 30%;
-    margin-left: 12.5%;
+    margin-top: 42%;
+    margin-left: 10%;
   }
 
   #sun {
-    margin-left: 18.5%;
-    margin-top: -15%;
+    margin-left: 21.5%;
+    margin-top: -20%;
     width: 300px;
     height: auto;
   }
@@ -76,5 +106,21 @@
   #eclipsed {
     width: 300px;
     height: auto;
+  }
+
+  #stars-0 {
+    background: url("../../images/stars-even-smaller-vertical.png");
+  }
+  
+  #stars-1 {
+    background: url("../../images/stars-smallest-vertical.png");
+  }
+  
+  #stars-2 {
+    background: url("../../images/stars-01-vertical.png");
+  }
+  
+  #stars-3 {
+    background: url("../../images/stars-02-vertical.png");
   }
 }
