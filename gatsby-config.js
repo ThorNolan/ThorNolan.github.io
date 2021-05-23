@@ -3,7 +3,7 @@ module.exports = {
     title: `THOR NOLAN PORTFOLIO`,
     description: `Thor Nolan Portfolio | Full stack Developer & Creative Web Designer`,
     author: `Thor Nolan <tnolan5764@gmail.com>`,
-    siteURL: 'https://thornolan.com',
+    siteUrl: 'https://thornolan.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +15,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-cname`,
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
