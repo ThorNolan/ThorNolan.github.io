@@ -59,6 +59,7 @@ module.exports = {
     `node-sass`,
     `@material-ui/core`,
     `@material-ui/icons`,
+    `gh-pages`,
     `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-offline`,
