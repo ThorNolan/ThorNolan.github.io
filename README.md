@@ -4,7 +4,7 @@
 
 👋 Welcome to the repository for all the code for my personal portfolio website. On the site you can easily find any and all information you may be looking for about me and my technical skill-set, as well as links to selected projects, my resume, and a number of means of getting in touch with me. The site is an ongoing labor of love, and I update it quite frequently, so check back for new designs as well as new projects that have been added!
 
-[Click here to check it out!](https://thornolan.com/ "Deployed website")
+[check it out](https://thornolan.com/ "Deployed website")
 
 ## 🔧 Technologies Used
 
