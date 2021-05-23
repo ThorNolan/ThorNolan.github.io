@@ -1,0 +1,54 @@
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $blue-bg;
+  // background: -webkit-linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg});
+  // background: linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg});
+  padding-bottom: 10px !important;
+}
+
+.card-collapse {
+  background: $blue-bg;
+  background: -webkit-linear-gradient(to top, #{$bg-dark}, #{$blue-bg});
+  background: linear-gradient(to top, #{$bg-dark}, #{$blue-bg});
+
+  p {
+    color: $light-text;
+    font-size: 0.85em;
+    font-family: $default;
+    font-weight: 400;
+  }
+}
+
+.card-action {
+  a {
+    margin: 0;
+    padding: 0;
+    color: $highlight;
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 400;
+  }
+}
+
+.collapse-content {
+  padding-top: 0 !important;
+}
+
+.MuiIconButton-root {
+  color: $light-text !important;
+  padding: 5px !important;
+}
+
+.MuiCard-root {
+  &:hover {
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* styling for videos on project cards */
+video::-webkit-media-controls {
+  display: none !important;
+}

@@ -1,0 +1,200 @@
+#about-me {
+  background-color: $bg-white;
+  padding-top: 8rem;
+
+  #profile-pic {
+    width: 26%;
+    height: auto;
+    float: left;
+    margin-right: 2.5rem;
+
+    @include breakpoint('<=medium') {
+      margin-right: 1rem;
+    }
+
+    @include breakpoint('<=small') {
+      width: 175px;
+    }
+  }
+
+  .about-row {
+    overflow: hidden;
+  }
+
+  .about-text {
+    padding-right: 2.5rem;
+
+    @include breakpoint('<=medium') {
+      padding-right: 0.5rem;
+    }
+
+    @include breakpoint('<=small') {
+      padding-right: 0;
+    }
+  }
+
+  h4 {
+    font-size: 2em;
+    font-family: $display-text;
+    font-weight: 500;
+    color: $dark-text;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    @include breakpoint('<=small') {
+      font-size: 1.5em;
+    }
+  }
+
+  p {
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 300;
+    color: $dark-text;
+    text-align: justify;
+
+    @include breakpoint('<=small') {
+      font-size: 0.8em;
+    }
+  }
+
+  a {
+    color: $dark-text;
+    text-decoration: none;
+  }
+
+  #email {
+    color: $highlight;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include breakpoint('<=large') {
+    padding-top: 5rem;
+  }
+}
+
+.resume-container {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  position: relative;
+  width: 305px;
+  text-decoration: none;
+  text-align: center;
+
+  span {
+    letter-spacing: 2px;
+    line-height: 32px;
+    position: relative;
+    display: inline-block;
+    top: -50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: $default;
+    font-weight: 300;
+    color: $dark-text;
+    transition: all 0.5s;
+    transform: 0.78s ease-in-out;
+  }
+
+  .border-animate {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: $highlight;
+  }
+
+  &:hover {
+    .border-animate {
+      animation: 0.5s draw linear forwards;
+    }
+
+    span {
+      transform: scale(1.1);
+    }
+  }
+
+  @include breakpoint('<=medium') {
+    margin-left: 28.5%;
+  }
+
+  @include breakpoint('<=small') {
+    margin-left: 4%;
+  }
+}
+
+.down-button-container {
+  margin: 0 auto;
+  text-align: center;
+
+  a {
+    color: $dark-text;
+    transition: all 0.5s;
+    transform: translateY(-5px);
+
+    i {
+      transition: all 0.5s;
+    }
+
+    h4 {
+      transition: all 0.65s;
+    }
+
+    &:hover i {
+      color: $highlight;
+      transform: translateY(7px);
+    }
+
+    &:hover h4 {
+      color: $highlight;
+    }
+  }
+
+}
+
+@-moz-keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}

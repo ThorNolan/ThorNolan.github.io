@@ -1,0 +1,133 @@
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 7.5%;
+  min-height: 325px !important;
+  width: 425px;
+  font-size: 1.35rem;
+  font-family: $default;
+  font-weight: 400;
+  margin: 2.5rem;
+
+  ul {
+    color: rgba(0,0,0,0.9);
+    padding-top: 5%;
+    width: 100%;
+    z-index: 1;
+    line-height: 32px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+
+    li {
+      margin: 0;
+    }
+  }
+
+  @include breakpoint('<=large') {
+    font-size: 1em;
+    min-height: 295px !important;
+    width: 350px;
+    margin: 1.5rem;
+  }
+}
+
+#skills {
+  padding-bottom: 3rem;
+
+  h4 {
+    padding-top: 2.5%;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include breakpoint('<=small') {
+    overflow-x: hidden;
+  }
+}
+
+.wave {
+  width: 900px;
+  height: 875px;
+  position: absolute;
+  overflow-x: hidden !important;
+  top: -30%;
+  left: 60%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 42%;
+  background: $highlight;
+
+  @include breakpoint('<=large') {
+    width: 631px;
+    height: 623px;
+    top: 51%;
+    left: 117%;
+    margin-left: -555px;
+    margin-top: -500px;
+  }
+
+  @include breakpoint('<=small') {
+    width: 600px;
+    height: 575px;
+  }
+
+  @include breakpoint('<=xsmall') {
+    width: 600px;
+    height: 597px;
+    margin-left: -625px;
+    margin-top: -475px;
+    top: 48.5%;
+    left: 150%;
+  }
+}
+
+.wave-one {
+  animation: wave 19s infinite linear;
+}
+
+.wave-two {
+  animation: wave 35s infinite linear;
+}
+
+.wave-three {
+  animation: wave 28s infinite linear;
+}
+
+@-moz-keyframes wave {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
