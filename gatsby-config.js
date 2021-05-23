@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#1D1F3C`,
         theme_color: `#1D1F3C`,
         display: `standalone`,
-        icon: `src/images/new-improved-favicon-03.png`,
+        icon: `src/images/mstile-150x150.png`,
       },
     },
     `react-tsparticles`,
