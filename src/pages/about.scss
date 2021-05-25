@@ -39,12 +39,14 @@
     font-family: $display-text;
     font-weight: 500;
     color: $dark-text;
-    padding-top: 3rem;
+    padding-top: 8rem;
     padding-bottom: 1rem;
     text-align: center;
 
     @include breakpoint('<=small') {
-      font-size: 1.5em;
+      font-size: 1.3em;
+      padding-top: 5rem;
+      padding-bottom: 0;
     }
   }
 
@@ -66,7 +68,9 @@
   }
 
   #wave {
-    font-size: 10px;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-left: 5px;
   }
 
   #email {

@@ -20,23 +20,28 @@
 
     li {
       margin: 0;
+
+      i {
+        font-size: 15px;
+      }
     }
   }
 
   @include breakpoint('<=large') {
-    font-size: 1em;
+    font-size: 1rem;
     min-height: 295px !important;
     width: 350px;
     margin: 1.5rem;
   }
 
   @include breakpoint('<=small') {
-    border-radius: 5px;
+    border-radius: 0;
   }
 }
 
 #skills {
   padding-bottom: 3rem;
+  padding-top: 3rem;
 
   h4 {
     padding-top: 2.5%;
