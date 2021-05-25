@@ -24,13 +24,13 @@ const About = () => (
           <div className="about-text">
             <p id="intro" data-sal="slide-up" data-sal-delay="300" data-sal-duration="450" data-sal-easing="ease">I'm Thor, a developer and web designer based in
               the Bay Area, CA. I focus on front end development, and appreciate any opportunity to hone my craft and bring my creativity to interesting projects.
-              I like to collaborate closely with people to come up with strategies and solutions that work.</p>
+              I like to collaborate with people to come up with strategies and solutions that work.</p>
             <br />
             <p data-sal="slide-up" data-sal-delay="350" data-sal-duration="450" data-sal-easing="ease">When I'm not coding, I like to climb at my local climbing gym, and I love to travel whenever I can. I'm interested in technology, politics, philosophy, teaching, 
-              and everything about this beautiful planet we live on. I also built my desktop PC that I use for playing games, designing things in Illustrator, and working with 3D rendering software like the Unity engine.</p>
+              and everything about this beautiful planet we live on. I also built my desktop PC that I use for playing games and designing things in Illustrator</p>
             <br />
             <p data-sal="slide-up" data-sal-delay="400" data-sal-duration="450" data-sal-easing="ease">I'm sometimes available for freelance work, so if you have a project you'd
-              like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it <span role="img" aria-label="wave">🌊</span></p>
+              like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it <span role="img" aria-label="wave" id="wave">🌊</span></p>
             <div className="resume-container" data-sal="slide-up" data-sal-delay="450" data-sal-duration="450" data-sal-easing="ease">
               <a href="assets/images/resume.pdf" target="_blank">
                 <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">

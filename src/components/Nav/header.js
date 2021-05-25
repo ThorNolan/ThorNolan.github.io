@@ -1,37 +1,35 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-plugin-transition-link"
-import { StaticImage } from "gatsby-plugin-image"
 
 import "./header.scss"
+import logo from "../../images/new-improved-favicon-03.png";
 
 const Header = (props) => {
-  const getColor = (props) => {
-    const location = props.location;
-    if (location) {
-      if (location.includes("about") || location.includes("work")) {
-        return "#232320"
-      } else {
-        return "#FEFAF6"
-      }
+  const [location, setLocation] = React.useState("");
+
+  React.useEffect(() => {
+    setLocation(props.location);
+  }, [props])
+
+  const getColor = (location) => {
+    if (location.includes("about") || location.includes("work")) {
+      return "#232320";
     }
+    return "#FEFAF6";
   }
 
-  const getBackground = (props) => {
-    const location = props.location;
-    if (location) {
-      if (location.includes("about") || location.includes("work")) {
-        return "#FEFAF6"
-      } else {
-        return "rgba(0,0,0,0)"
-      }
+  const getBackground = (location) => {
+    if (location.includes("about") || location.includes("work")) {
+      return "#FEFAF6";
     }
+    return "transparent";
   }
 
   return (
   <header>
     <div id="navigation">
-      <nav id="up" style={{background: `${getBackground(props)}`}}>
+      <nav id="up" style={{backgroundColor: `${getBackground(location)}`}}>
         <div className="container">
           <div>
             <Link 
@@ -39,14 +37,12 @@ const Header = (props) => {
               title="Thor Nolan | Portfolio"
               id="logo-link"
             >
-              <StaticImage 
+              <img 
                 id="logo-image"
-                src="../../images/new-improved-favicon-03.png"
-                loading="eager" 
+                src={logo}
+                loading="eager"
                 alt="Thor Nolan Eclipse Logo"
-                quality={95}
-                formats={["AUTO", "WEBP", "AVIF"]}
-              />
+              /> 
             </Link>
             <ul id="links">
               <li>
@@ -54,7 +50,7 @@ const Header = (props) => {
                   to="/"
                   activeClassName="active"
                 >
-                  <span style={{color: `${getColor(props)}`}}>HOME</span>
+                  <span style={{color: `${getColor(location)}`}}>HOME</span>
                 </Link>
               </li>
               <li>
@@ -63,7 +59,7 @@ const Header = (props) => {
                   activeClassName="active"
                   partiallyActive={true}
                 >
-                  <span style={{color: `${getColor(props)}`}}>ABOUT</span>
+                  <span style={{color: `${getColor(location)}`}}>ABOUT</span>
                 </Link>
               </li>
               <li>
@@ -72,7 +68,7 @@ const Header = (props) => {
                   activeClassName="active"
                   partiallyActive={true}
                 >
-                  <span style={{color: `${getColor(props)}`}}>WORK</span>
+                  <span style={{color: `${getColor(location)}`}}>WORK</span>
                 </Link>
               </li>
             </ul>
@@ -86,10 +82,12 @@ const Header = (props) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  location: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  location: ``,
 }
 
 export default Header
