@@ -1,17 +1,9 @@
-.material-icons {
-  color: $dark-text !important;
-}
-
-.material-icons.active {
-  color: $highlight !important;
-}
-
 #footer {
   color: $dark-text;
   background-color: $bg-white;
   font-family: $display-text;
   font-weight: 500;
-  height: 250px;
+  height: 265px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -23,7 +15,7 @@
     margin-bottom: -2%;
     font-size: 11px;
 
-    i {
+    svg {
       color: $highlight;
     }
 
@@ -37,6 +29,7 @@
     width: 50px;
     height: 50px;
     text-align: center;
+    padding-bottom: 5%;
 
     @include breakpoint('<=small') {
       padding-bottom: 10%;
@@ -44,13 +37,15 @@
   }
 
   .back-to-top {
-    i {
+    svg {
       color: $dark-text;
       transition: all 0.5s;
       transform: translateY(5px);
+      height: 1.8em;
+      width: 1.8em;
     }
 
-    &:hover i {
+    &:hover svg {
       color: $highlight;
       transform: translateY(-7px);
     }
@@ -73,13 +68,19 @@
       color: $dark-text;
       text-align: center;
       cursor: pointer;
+      font-size: 2em;
     
-      i {
+      svg {
         transition: all 0.25s;
         color: $dark-text;
       }
+
+      svg.linkedin {
+        height: 0.85em;
+        width: 0.85em;
+      }
     
-      &:hover i {
+      &:hover svg {
         color: $highlight;
       }
     }

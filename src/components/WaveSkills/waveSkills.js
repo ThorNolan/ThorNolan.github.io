@@ -7,7 +7,7 @@ const WaveSkills = () => {
   return (
     <div id="skills">
       <div className="skills-wrapper">
-        <div className="skills1 box" data-sal="slide-up" data-sal-delay="200" data-sal-duration="550" data-sal-easing="ease">
+        <div className="skills1 box" data-sal="slide-up" data-sal-delay="150" data-sal-duration="550" data-sal-easing="ease">
           <div className="wave wave-one"></div>
           <ul className="list-skills">
             <li><i className="material-icons tiny">keyboard_arrow_right</i> React.js/Redux (and Gatsby) </li>
@@ -19,7 +19,7 @@ const WaveSkills = () => {
           </ul>
         </div>
 
-        <div className="skills2 box" data-sal="slide-up" data-sal-delay="300" data-sal-duration="550" data-sal-easing="ease">
+        <div className="skills2 box" data-sal="slide-up" data-sal-delay="250" data-sal-duration="550" data-sal-easing="ease">
           <div className="wave wave-two"></div>
           <ul className="list-skills">
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Node.js </li>
@@ -31,7 +31,7 @@ const WaveSkills = () => {
           </ul>
         </div>
 
-        <div className="skills3 box" data-sal="slide-up" data-sal-delay="400" data-sal-duration="550" data-sal-easing="ease">
+        <div className="skills3 box" data-sal="slide-up" data-sal-delay="300" data-sal-duration="550" data-sal-easing="ease">
           <div className="wave wave-three"></div>
           <ul className="list-skills">
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Proficient with Wordpress, Squarespace, and other CMS's </li>
