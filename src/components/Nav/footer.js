@@ -54,7 +54,7 @@ const Footer = () => {
               </a>
             </CustomTooltip>
           </li>
-          <li data-sal="slide-up" data-sal-delay="100" data-sal-duration="400" data-sal-easing="ease">
+          <li data-sal="slide-up" data-sal-delay="150" data-sal-duration="400" data-sal-easing="ease">
             <CustomTooltip title="Github" placement="bottom">
               <a
                 target="_blank"
@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
             </CustomTooltip>
           </li>
-          <li data-sal="slide-up" data-sal-delay="100" data-sal-duration="400" data-sal-easing="ease">
+          <li data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" data-sal-easing="ease">
             <CustomTooltip title="LinkedIn" placement="right">
               <a 
                 target="_blank"

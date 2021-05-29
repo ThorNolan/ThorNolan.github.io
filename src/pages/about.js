@@ -1,12 +1,42 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { makeStyles } from '@material-ui/core/styles';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
 
 import { FaChevronDown } from "@react-icons/all-files/fa/FaChevronDown";
 import Seo from "../components/Wrapper/seo.js";
 import WaveSkills from "../components/WaveSkills/waveSkills.js";
 import "./about.scss";
 
-const About = () => (
+const tooltipStyle = makeStyles({
+  tooltip: {
+    backgroundColor: '#232320',
+    margin: '12px'
+  },
+});
+
+const CustomTooltip = (props) => {
+  const classes = tooltipStyle();
+
+  return <Tooltip TransitionComponent={Zoom} classes={classes} {...props} />;
+}
+
+const About = () => {
+  const [copySuccess, setCopySuccess] = React.useState('');
+
+  const handleCopy = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText('tnolan5764@gmail.com');
+      setCopySuccess('Email copied to your clipboard ✅');
+      const timer = setTimeout(() => {
+        setCopySuccess('');
+      }, 7000);
+      return () => clearTimeout(timer);
+    }
+  }
+
+  return (
   <>
     <Seo title="About" />
     <section className="section page-content" id="about-me">
@@ -23,7 +53,6 @@ const About = () => (
               data-sal-easing="ease"
             />
           </div>
-
           <div className="about-text">
             <p id="intro" data-sal="slide-up" data-sal-delay="200" data-sal-duration="400" data-sal-easing="ease">I'm Thor, a developer and web designer based in
               the Bay Area, CA. I focus on front end development, and appreciate any opportunity to hone my craft and bring my creativity to interesting projects.
@@ -31,7 +60,11 @@ const About = () => (
             <p data-sal="slide-up" data-sal-delay="250" data-sal-duration="400" data-sal-easing="ease">When I'm not coding, I like to climb at my local climbing gym, and I love to travel whenever I can. I'm interested in technology, politics, philosophy, teaching, 
               and everything about this beautiful planet we live on. I also built my desktop PC that I use for playing games and designing things in Illustrator</p>
             <p data-sal="slide-up" data-sal-delay="300" data-sal-duration="400" data-sal-easing="ease">I'm sometimes available for freelance work, so if you have a project you'd
-              like to work together on <a href="mailto:tnolan5764@gmail.com" id="email" name="tnolan5764@gmail.com">send me an email</a> and we can chat about it 
+              like to work together on 
+              <CustomTooltip title={copySuccess !== '' ? copySuccess : 'tnolan5764@gmail.com'} placement="bottom">
+                <button onClick={() =>  handleCopy()} id="email" name="tnolan5764@gmail.com">send me an email</button>
+              </CustomTooltip> 
+              and we can chat about it 
               <span role="img" aria-label="wave" id="wave">🌊</span> 
             </p>
           </div>
@@ -51,6 +84,7 @@ const About = () => (
       </div>
     </section>
   </>
-)
+  )
+}
 
-export default About
+export default About;
