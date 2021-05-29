@@ -171,6 +171,14 @@
 
 }
 
+#email {
+  transition: all 0.65s;
+  
+  &:hover {
+    color: $highlight;
+  }
+}
+
 @-moz-keyframes draw {
   0% {
     stroke-dasharray: 140 540;

@@ -3,8 +3,8 @@ import * as React from "react"
 import { FaChevronUp } from "@react-icons/all-files/fa/FaChevronUp";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaHeart } from "@react-icons/all-files/fa/FaHeart";
-import { MdMail} from "@react-icons/all-files/md/MdMail";
-import { SiLinkedin } from "@react-icons/all-files/si/SiLinkedin";
+import { FaAt } from "@react-icons/all-files/fa/FaAt";
+import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 
 import "./footer.scss"
  
@@ -30,7 +30,7 @@ const Footer = () => (
             id="email"
             aria-label="Email: tnolan5764@gmail.com"
           >
-            <MdMail className="footer-icon" />
+            <FaAt className="footer-icon" />
           </a>
         </li>
         <li data-sal="slide-up" data-sal-delay="100" data-sal-duration="400" data-sal-easing="ease">
@@ -50,7 +50,7 @@ const Footer = () => (
             href="https://www.linkedin.com/in/thornolan/"
             aria-label="LinkedIn"
           >
-            <SiLinkedin className="footer-icon linkedin" />
+            <FaLinkedinIn className="footer-icon" />
           </a>
         </li>
       </ul>

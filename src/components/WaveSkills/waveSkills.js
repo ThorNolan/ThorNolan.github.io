@@ -10,7 +10,7 @@ const WaveSkills = () => {
         <div className="skills1 box" data-sal="slide-up" data-sal-delay="150" data-sal-duration="550" data-sal-easing="ease">
           <div className="wave wave-one"></div>
           <ul className="list-skills">
-            <li><i className="material-icons tiny">keyboard_arrow_right</i> React.js/Redux (and Gatsby) </li>
+            <li id="down"><i className="material-icons tiny">keyboard_arrow_right</i> React.js/Redux (and Gatsby) </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Semantic HTML5 </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> CSS3 and SCSS </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Javascript ES6/7+ </li>
@@ -27,7 +27,7 @@ const WaveSkills = () => {
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Express server </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> Working with RESTful API's </li>
             <li><i className="material-icons tiny">keyboard_arrow_right</i> ESlint, smoke/unit testing</li>
-            <li id="down"><i className="material-icons tiny">keyboard_arrow_right</i> Agile methodologies </li>
+            <li><i className="material-icons tiny">keyboard_arrow_right</i> Agile methodologies </li>
           </ul>
         </div>
 
