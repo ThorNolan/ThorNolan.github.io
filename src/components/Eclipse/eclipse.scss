@@ -61,6 +61,38 @@
   user-select: none;
 }
 
+.Typewriter {
+  position: absolute;
+  height: 210px;
+  width: 625px;
+  top: 25%;
+  text-align: center;
+  padding-left: 3%;
+  color: $light-text;
+  font-size: 1rem;
+  font-family: $display-text;
+  line-height: 1.7rem;
+}
+
+.Typewriter__cursor {
+  color: $highlight;
+}
+
+#typeweriter-img {
+  position: relative;
+  text-align: center;
+}
+
+#my-name {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#js, #cwd {
+  color: $highlight;
+  font-size: 1.1rem;
+}
+
 #sun {
   width: 520px;
   margin-left: 10%;
@@ -81,45 +113,73 @@
   #sun {
     margin-left: 15%;
     margin-top: -15%;
-  }  
+  }
 
   #eclipsed {
     width: 500px;
     height: auto;
+  }
+
+  .Typewriter {
+    width: 500px;
+    top: 15.5%;
+    font-size: 0.8rem;
+  }
+
+  #my-name {
+    font-size: 1rem;
+  }
+
+  #js, #cwd {
+    font-size: 0.9rem;
   }
 }
 
 @include breakpoint('<=small') {
 
   #sun-container, #moon-container {
-    margin-top: 42%;
-    margin-left: 10%;
+    margin-top: 40%;
+    margin-left: 6%;
+  }
+
+  .Typewriter {
+    width: 400px;
+    top: 14%;
+    font-size: 13px;
+  }
+
+  #my-name {
+    font-size: 15px;
+  }
+
+  #js, #cwd {
+    font-size: 14px;
   }
 
   #sun {
     margin-left: 21.5%;
     margin-top: -20%;
-    width: 300px;
+    width: 400px;
     height: auto;
   }
 
   #eclipsed {
-    width: 300px;
+    width: 400px;
     height: auto;
   }
 
   #stars-0 {
     background: url("../../images/stars-even-smaller-vertical.png");
   }
-  
+
   #stars-1 {
     background: url("../../images/stars-smallest-vertical.png");
   }
-  
+
   #stars-2 {
     background: url("../../images/stars-01-vertical.png");
   }
-  
+
   #stars-3 {
     background: url("../../images/stars-02-vertical.png");
   }

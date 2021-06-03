@@ -72,11 +72,11 @@ const ProjectCard = (props) => {
             {props.desc}
           </Typography>
           {props.repo
-            ? 
+            ?
             <div className="card-action">
               <a href={props.link} target="_blank" rel="noreferrer">[deployed]</a><a href={props.repo} target="_blank" rel="noreferrer">[github repo]</a>
             </div>
-            : 
+            :
             <div className="card-action">
               <a href={props.link} target="_blank" rel="noreferrer">[visit the site]</a>
             </div>
@@ -87,8 +87,12 @@ const ProjectCard = (props) => {
   )
 }
 
-export default ProjectCard
+ProjectCard.defaultProps = {
+  expanded: false,
+}
 
 ProjectCard.propTypes = {
   expanded: PropTypes.bool,
 }
+
+export default ProjectCard
