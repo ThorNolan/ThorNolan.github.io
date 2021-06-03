@@ -2,6 +2,7 @@
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
   "static/bp-demo-vid.mp4": "static/bp-demo-vid-e5a075308cc1b64d36cb2428dc6fd915.mp4",
+  "static/eclipsed-moon.png": "static/eclipsed-moon-e00ba00fdb620abc0ad43689f4c28c2b.png",
   "static/eventpro-demo.mp4": "static/eventpro-demo-9b5d8ad2227beafcc585ef49eac66c07.mp4",
   "static/flat-sun.png": "static/flat-sun-f62984d16bfdffa0ffefd50f73e067af.png",
   "static/friend-finder-demo-vid.mp4": "static/friend-finder-demo-vid-3b7de22c7558b854ff60d8c657a426fb.mp4",
