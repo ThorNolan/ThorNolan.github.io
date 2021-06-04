@@ -10,7 +10,6 @@ const IndexPage = () => {
     setHasMounted,
   ] = React.useState(false);
 
-  
   React.useEffect(() => {
     setHasMounted(true)
   }, [])

@@ -6,8 +6,8 @@ import Typewriter from 'typewriter-effect'
 import particleConfig from "./particleConfig.js"
 import "./eclipse.scss"
 
-import eclipsedMoon from "../../images/eclipsed-moon.png"
-import flatSun from "../../images/flat-sun.png"
+import eclipsedMoon from "../../images/new-moon.png"
+import flatSun from "../../images/new-sun.png"
 
 const Eclipse = () => {
   const sceneEl = React.useRef(null);
