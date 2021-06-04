@@ -4,7 +4,7 @@
   overflow: hidden;
   pointer-events: none;
   background: $alt-bg;
-  background: linear-gradient(to bottom, #{$bg-dark}, #{$blue-bg});
+  background: linear-gradient(to bottom, #{$space2-bg}, #{$space1-bg}, #{$blue-bg});
 }
 
 .particle-container {
