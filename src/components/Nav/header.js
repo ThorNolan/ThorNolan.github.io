@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Link from "gatsby-plugin-transition-link"
 
 import "./header.scss"
-import logo from "../../images/new-improved-favicon-03.png";
+import logo from "../../images/tn-logo.png";
 
 const Header = (props) => {
   const [location, setLocation] = React.useState("");
@@ -32,21 +32,21 @@ const Header = (props) => {
       <nav id="up" style={{backgroundColor: `${getBackground(location)}`}}>
         <div className="container">
           <div>
-            <Link 
+            <Link
               to="/"
               title="Thor Nolan | Portfolio"
               id="logo-link"
             >
-              <img 
+              <img
                 id="logo-image"
                 src={logo}
                 loading="eager"
                 alt="Thor Nolan Eclipse Logo"
-              /> 
+              />
             </Link>
             <ul id="links">
               <li>
-                <Link 
+                <Link
                   to="/"
                   activeClassName="active"
                 >
@@ -54,7 +54,7 @@ const Header = (props) => {
                 </Link>
               </li>
               <li>
-                <Link 
+                <Link
                   to="/about/"
                   activeClassName="active"
                   partiallyActive={true}
@@ -63,7 +63,7 @@ const Header = (props) => {
                 </Link>
               </li>
               <li>
-                <Link 
+                <Link
                   to="/work/"
                   activeClassName="active"
                   partiallyActive={true}

@@ -63,7 +63,7 @@ const Eclipse = () => {
           />
         </li>
         <li data-depth="0.55" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="30" data-scalar-y="30" id="sun-container" className="layer">
-          <img loading="eager" id="sun" src={flatSun} alt="A shining sun with text: portfolio" />
+          <img loading="eager" id="sun" src={flatSun} alt="A shining, magnificent rotating sun" />
         </li>
         <li data-depth="0.80" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="30" data-scalar-y="30" id="moon-container" className="layer">
           <div id="typewriter-img">
@@ -73,7 +73,7 @@ const Eclipse = () => {
                 typewriter
                   .pauseFor(1500)
                   .changeDelay(70)
-                  .changeDeleteSpeed(30)
+                  .changeDeleteSpeed(40)
                   .typeString('Hi, my name\'s <span id="my-name">Thor...</span>')
                   .pauseFor(100)
                   .deleteChars(3)

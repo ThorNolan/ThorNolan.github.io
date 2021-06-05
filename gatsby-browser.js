@@ -7,5 +7,5 @@
 export const onPreRouteUpdate = () => {
   setTimeout(() => {
       document.getElementById("preloader").style.display = "none"
-  }, 2500)
+  }, 3000)
 };

@@ -15,16 +15,13 @@
     padding: 0;
 
     img {
-      width: 28px;
+      width: 38px;
       height: auto;
-      margin-top: 18px;
-
-      @include breakpoint('<=medium') {
-        margin-top: 10px;
-      }
+      margin-top: 7px;
+      margin-bottom: 0;
 
       @include breakpoint('<=small') {
-        margin-top: 8px;
+        width: 34px;
       }
     }
   }
@@ -79,13 +76,13 @@
           opacity: 0.95;
           transition: all 0.3s ease-in-out;
         }
-  
+
         &:hover {
           &:before {
             height: 100%;
-          } 
+          }
         }
-  
+
         &.active:before {
           height: 100%;
         }
