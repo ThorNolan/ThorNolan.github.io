@@ -49,6 +49,7 @@ const Header = (props) => {
                 <Link
                   to="/"
                   activeClassName="active"
+                  default
                 >
                   <span style={{color: `${getColor(location)}`}}>HOME</span>
                 </Link>

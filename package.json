@@ -29,6 +29,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-parallax-tilt": "^1.5.45",
     "react-tsparticles": "^1.27.0",
     "sass": "^1.32.13",
     "smooth-scroll": "^16.1.3",
