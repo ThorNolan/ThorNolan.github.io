@@ -44,7 +44,7 @@ const About = () => {
       <div className="container">
         <div className="about-row">
           <div id="profile-pic">
-            <Tilt tiltReverse={true}>
+            <Tilt tiltReverse={true} scale={1.08} transitionSpeed={175}>
               <StaticImage
                 src={"../images/profile-pic.jpg"}
                 loading="eager"
